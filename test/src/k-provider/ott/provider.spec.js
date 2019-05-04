@@ -1,8 +1,8 @@
-import OTTProvider from '../../../../src/k-provider/ott/provider';
+import OTTProvider from '../../../../src/v-provider/ott/provider';
 import * as BE_DATA from './be-data';
 import * as MEDIA_CONFIG_DATA from './media-config-data';
-import {MultiRequestResult} from '../../../../src/k-provider/common/multi-request-builder';
-import MultiRequestBuilder from '../../../../src/k-provider/common/multi-request-builder';
+import {MultiRequestResult} from '../../../../src/v-provider/common/multi-request-builder';
+import MultiRequestBuilder from '../../../../src/v-provider/common/multi-request-builder';
 
 const partnerId = 198;
 const playerVersion = '1.2.3';
@@ -132,7 +132,7 @@ describe('OTTProvider.partnerId:198', function() {
 describe('getEntryListConfig', function() {
   let provider, sandbox;
   const partnerId = 198;
-  const ks =
+  const vs =
     'djJ8MTk4fCkf82moylM8rVli2azka7KoJea3ITlM8Vh3_dYGU722OoJWDCS7_Pp8cqm1z6QtZAfqjGr36SjPr2GbuNKy1ejIDs7KLFpWd_VCEKKtOcwzaJ11FopaSEspI-uJMGFTvS0AmIBE1f137G36MYjOlMc=';
   const playerVersion = '1.2.3';
 
@@ -171,13 +171,13 @@ describe('getEntryListConfig', function() {
     );
   });
 
-  it('should load a playlist by entry list - with KS', done => {
+  it('should load a playlist by entry list - with VS', done => {
     sinon.stub(MultiRequestBuilder.prototype, 'execute').callsFake(function() {
       return new Promise(resolve => {
         resolve({response: new MultiRequestResult(BE_DATA.AnonymousPlaylistByEntryList.response)});
       });
     });
-    provider.getEntryListConfig({entries: ['259153', {entryId: '258459'}], ks}).then(
+    provider.getEntryListConfig({entries: ['259153', {entryId: '258459'}], vs}).then(
       entryListConfig => {
         try {
           entryListConfig.id.should.equal('');

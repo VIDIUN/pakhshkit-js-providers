@@ -10,12 +10,12 @@ export default class OVPPlaylistService extends OVPService {
    * Creates an instance of RequestBuilder for playlist.getPlaybackContext
    * @function getPlaybackContext
    * @param {string} serviceUrl The service base URL
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} playlistId The playlist ID
    * @returns {RequestBuilder} The request builder
    * @static
    */
-  static execute(serviceUrl: string, ks: string, playlistId: string): RequestBuilder {
+  static execute(serviceUrl: string, vs: string, playlistId: string): RequestBuilder {
     const headers: Map<string, string> = new Map();
     headers.set('Content-Type', 'application/json');
     const request = new RequestBuilder(headers);
@@ -25,7 +25,7 @@ export default class OVPPlaylistService extends OVPService {
     request.url = request.getUrl(serviceUrl);
     request.tag = `${SERVICE_NAME}-execute`;
     request.params = {
-      ks: ks,
+      vs: vs,
       id: playlistId,
       responseProfile: new BaseEntryResponseProfile()
     };
@@ -36,12 +36,12 @@ export default class OVPPlaylistService extends OVPService {
    * Creates an instance of RequestBuilder for playlist.list
    * @function list
    * @param {string} serviceUrl The base URL
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} playlistId The playlist ID
    * @returns {RequestBuilder} The request builder
    * @static
    */
-  static get(serviceUrl: string, ks: string, playlistId: string): RequestBuilder {
+  static get(serviceUrl: string, vs: string, playlistId: string): RequestBuilder {
     const headers: Map<string, string> = new Map();
     headers.set('Content-Type', 'application/json');
     const request = new RequestBuilder(headers);
@@ -51,7 +51,7 @@ export default class OVPPlaylistService extends OVPService {
     request.url = request.getUrl(serviceUrl);
     request.tag = `${SERVICE_NAME}-get`;
     request.params = {
-      ks: ks,
+      vs: vs,
       id: playlistId,
       responseProfile: {
         fields: 'id,name,description,thumbnailUrl',

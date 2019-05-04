@@ -1,21 +1,21 @@
-import OVPStatsService from '../../../../../src/k-provider/ovp/services/stats/stats-service';
+import OVPStatsService from '../../../../../src/v-provider/ovp/services/stats/stats-service';
 import RequestBuilder from '../../../../../src/util/request-builder';
-import OVPConfiguration from '../../../../../src/k-provider/ovp/config';
+import OVPConfiguration from '../../../../../src/v-provider/ovp/config';
 import {param} from '../../../../../src/util/param';
 
 describe('stats service - collect', function() {
-  let ovpParams, ks, event;
+  let ovpParams, vs, event;
   const playerVersion = '1.2.3';
 
   beforeEach(function() {
     ovpParams = OVPConfiguration.get();
-    ks = '1234';
+    vs = '1234';
     event = {a: 1};
   });
 
   it('should be proper values', function() {
     const serviceUrl = 'http://my/url';
-    const request = OVPStatsService.collect(serviceUrl, ks, playerVersion, event);
+    const request = OVPStatsService.collect(serviceUrl, vs, playerVersion, event);
     (request instanceof RequestBuilder).should.be.true;
     request.service.should.be.equal('stats');
     request.action.should.be.equal('collect');
@@ -27,7 +27,7 @@ describe('stats service - collect', function() {
         {},
         ovpParams.serviceParams,
         {
-          ks: ks,
+          vs: vs,
           clientTag: 'html5:v' + playerVersion
         },
         event

@@ -9,11 +9,11 @@ const youtubeMediaEntryData = [
       externalSourceType: 'YouTube',
       name: 'test youtube entry',
       description: 'youtube description',
-      dataUrl: 'https://cdnapisec.kaltura.com/p/1111/sp/1111/playManifest/entryId/1234/format/url/protocol/https',
+      dataUrl: 'https://cdnapisec.vidiun.com/p/1111/sp/1111/playManifest/entryId/1234/format/url/protocol/https',
       type: 'externalMedia.externalMedia',
       entryType: 1,
       duration: 0,
-      poster: 'https://cfvod.kaltura.com/p/1111/sp/1111/thumbnail/entry_id/1234/version/100001',
+      poster: 'https://cfvod.vidiun.com/p/1111/sp/1111/thumbnail/entry_id/1234/version/100001',
       tags: ''
     },
     playBackContextResult: {
@@ -24,7 +24,7 @@ const youtubeMediaEntryData = [
         flavorAssets: [],
         actions: [],
         messages: [],
-        objectType: 'KalturaPlaybackContext'
+        objectType: 'VidiunPlaybackContext'
       },
       sources: [],
       actions: [],
@@ -36,7 +36,7 @@ const youtubeMediaEntryData = [
       data: {
         objects: [],
         totalCount: 0,
-        objectType: 'KalturaMetadataListResponse'
+        objectType: 'VidiunMetadataListResponse'
       },
       totalCount: 0
     }
@@ -64,7 +64,7 @@ const youtubeMediaEntryResult = {
     tags: ''
   },
   type: 'Unknown',
-  poster: 'https://cfvod.kaltura.com/p/1111/sp/1111/thumbnail/entry_id/1234/version/100001'
+  poster: 'https://cfvod.vidiun.com/p/1111/sp/1111/thumbnail/entry_id/1234/version/100001'
 };
 
 export {youtubeMediaEntryData, youtubeMediaEntryResult};

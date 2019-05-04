@@ -1,10 +1,10 @@
-import OVPProviderParser from '../../../../src/k-provider/ovp/provider-parser';
-import playbackContext from '../../../../src/k-provider/ovp/response-types/kaltura-playback-context';
+import OVPProviderParser from '../../../../src/v-provider/ovp/provider-parser';
+import playbackContext from '../../../../src/v-provider/ovp/response-types/vidiun-playback-context';
 import {
-  kalturaDashSource,
-  kalturaDashSourceFlavorAssets,
-  kalturaSourceProtocolMismatch,
-  kalturaSourceProtocolMismatchFlavorAssets
+  vidiunDashSource,
+  vidiunDashSourceFlavorAssets,
+  vidiunSourceProtocolMismatch,
+  vidiunSourceProtocolMismatchFlavorAssets
 } from './playback-sources-data';
 import {youtubeMediaEntryResult, youtubeMediaEntryData} from './provider-parser-data';
 
@@ -21,8 +21,8 @@ describe('provider parser', function() {
   describe('_parseAdaptiveSource', () => {
     it('should return a valid adaptive source for a valid input', () => {
       const context = new playbackContext({});
-      context.flavorAssets = kalturaDashSourceFlavorAssets;
-      const adaptiveSource = OVPProviderParser._parseAdaptiveSource(kalturaDashSource, context, 'myKS', 'myPid', 1234, 1234);
+      context.flavorAssets = vidiunDashSourceFlavorAssets;
+      const adaptiveSource = OVPProviderParser._parseAdaptiveSource(vidiunDashSource, context, 'myVS', 'myPid', 1234, 1234);
       adaptiveSource.should.exist;
       adaptiveSource.id.should.equal('1234_911,mpegdash');
       adaptiveSource.mimetype.should.equal('application/dash+xml');
@@ -30,8 +30,8 @@ describe('provider parser', function() {
     });
     it('should return null if play url is empty', () => {
       const context = new playbackContext({});
-      context.flavorAssets = kalturaSourceProtocolMismatchFlavorAssets;
-      const adaptiveSource = OVPProviderParser._parseAdaptiveSource(kalturaSourceProtocolMismatch, context, 'myKS', 'myPid', 1234, 1234);
+      context.flavorAssets = vidiunSourceProtocolMismatchFlavorAssets;
+      const adaptiveSource = OVPProviderParser._parseAdaptiveSource(vidiunSourceProtocolMismatch, context, 'myVS', 'myPid', 1234, 1234);
       (adaptiveSource === null).should.be.true;
     });
   });

@@ -1,6 +1,6 @@
 //@flow
 
-export default class KalturaPlaylist {
+export default class VidiunPlaylist {
   /**
    * @member - playlist id
    * @type {string}

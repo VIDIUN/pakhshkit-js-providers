@@ -1,5 +1,5 @@
 // @flow
 declare type ProviderPlaylistInfoObject = {
   playlistId: string,
-  ks?: string
+  vs?: string
 };

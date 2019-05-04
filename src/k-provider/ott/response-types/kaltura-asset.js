@@ -1,7 +1,7 @@
 //@flow
 import ServiceResult from '../../common/base-service-result';
 
-export default class KalturaAsset extends ServiceResult {
+export default class VidiunAsset extends ServiceResult {
   static Type: {[type: string]: string} = {
     MEDIA: 'media',
     RECORDING: 'recording',

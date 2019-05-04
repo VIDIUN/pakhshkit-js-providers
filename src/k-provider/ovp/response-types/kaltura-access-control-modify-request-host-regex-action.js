@@ -1,7 +1,7 @@
 //@flow
-import KalturaRuleAction from './kaltura-rule-action';
+import VidiunRuleAction from './vidiun-rule-action';
 
-export default class KalturaAccessControlModifyRequestHostRegexAction extends KalturaRuleAction {
+export default class VidiunAccessControlModifyRequestHostRegexAction extends VidiunRuleAction {
   /**
    * @member - Request host regex pattern
    * @type {string}

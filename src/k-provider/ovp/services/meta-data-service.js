@@ -9,12 +9,12 @@ export default class OVPMetadataService extends OVPService {
    * Creates an instance of RequestBuilder for metadata_metadata.list
    * @function getPlaybackContext
    * @param {string} serviceUrl The service base URL
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} entryId The entry ID
    * @returns {RequestBuilder} The request builder
    * @static
    */
-  static list(serviceUrl: string, ks: string, entryId: string): RequestBuilder {
+  static list(serviceUrl: string, vs: string, entryId: string): RequestBuilder {
     const headers: Map<string, string> = new Map();
     headers.set('Content-Type', 'application/json');
     const request = new RequestBuilder(headers);
@@ -23,8 +23,8 @@ export default class OVPMetadataService extends OVPService {
     request.method = 'POST';
     request.url = request.getUrl(serviceUrl);
     request.tag = 'metadata_metadata-list';
-    const filter = {objectType: 'KalturaMetadataFilter', objectIdEqual: entryId, metadataObjectTypeEqual: '1'};
-    request.params = {filter: filter, ks: ks};
+    const filter = {objectType: 'VidiunMetadataFilter', objectIdEqual: entryId, metadataObjectTypeEqual: '1'};
+    request.params = {filter: filter, vs: vs};
     return request;
   }
 }

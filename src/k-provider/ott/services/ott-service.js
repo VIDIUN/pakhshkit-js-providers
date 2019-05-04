@@ -8,16 +8,16 @@ export default class OTTService {
   /**
    * Gets a new instance of MultiRequestBuilder with ott params
    * @function getMultiRequest
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} partnerId The partner ID
    * @returns {MultiRequestBuilder} The multi request builder
    * @static
    */
-  static getMultiRequest(ks: string, partnerId?: number): MultiRequestBuilder {
+  static getMultiRequest(vs: string, partnerId?: number): MultiRequestBuilder {
     const config = OTTConfiguration.get();
     const ottParams = config.serviceParams;
-    if (ks) {
-      Object.assign(ottParams, {ks: ks});
+    if (vs) {
+      Object.assign(ottParams, {vs: vs});
     }
     if (partnerId) {
       Object.assign(ottParams, {partnerId: partnerId});

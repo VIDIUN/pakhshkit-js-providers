@@ -4,7 +4,7 @@ import OVPConfiguration from './config';
 type urlParamsType = {
   partnerId: number,
   entryId: string,
-  ks: string,
+  vs: string,
   uiConfId: ?number,
   format: string,
   protocol: string,
@@ -23,7 +23,7 @@ export default class PlaySourceUrlBuilder {
   static build(urlParams: urlParamsType): string {
     const config = OVPConfiguration.get();
     const cdnUrl: string = config.cdnUrl;
-    const {partnerId, entryId, ks, uiConfId, format, protocol, extension, flavorIds} = urlParams;
+    const {partnerId, entryId, vs, uiConfId, format, protocol, extension, flavorIds} = urlParams;
 
     //verify mandatory params
     if (!cdnUrl || !partnerId || !entryId || !format || !protocol) {
@@ -42,8 +42,8 @@ export default class PlaySourceUrlBuilder {
       playUrl += '/uiConfId/' + uiConfId;
     }
 
-    if (ks !== '') {
-      playUrl += '/ks/' + ks;
+    if (vs !== '') {
+      playUrl += '/vs/' + vs;
     }
 
     if (extension !== '') {

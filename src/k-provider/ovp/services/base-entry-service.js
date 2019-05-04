@@ -10,12 +10,12 @@ export default class OVPBaseEntryService extends OVPService {
    * Creates an instance of RequestBuilder for baseentry.getPlaybackContext
    * @function getPlaybackContext
    * @param {string} serviceUrl The service base URL
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} entryId The entry ID
    * @returns {RequestBuilder} The request builder
    * @static
    */
-  static getPlaybackContext(serviceUrl: string, ks: string, entryId: string): RequestBuilder {
+  static getPlaybackContext(serviceUrl: string, vs: string, entryId: string): RequestBuilder {
     const headers: Map<string, string> = new Map();
     headers.set('Content-Type', 'application/json');
     const request = new RequestBuilder(headers);
@@ -24,8 +24,8 @@ export default class OVPBaseEntryService extends OVPService {
     request.method = 'POST';
     request.url = request.getUrl(serviceUrl);
     request.tag = 'baseEntry-getPlaybackContext';
-    const contextDataParams = {objectType: 'KalturaContextDataParams', flavorTags: 'all'};
-    request.params = {entryId: entryId, ks: ks, contextDataParams: contextDataParams};
+    const contextDataParams = {objectType: 'VidiunContextDataParams', flavorTags: 'all'};
+    request.params = {entryId: entryId, vs: vs, contextDataParams: contextDataParams};
     return request;
   }
 
@@ -33,13 +33,13 @@ export default class OVPBaseEntryService extends OVPService {
    * Creates an instance of RequestBuilder for baseentry.list
    * @function list
    * @param {string} serviceUrl The base URL
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {string} entryId The entry ID
    * @param {boolean} redirectFromEntryId whether the live entry should continue and play the VOD one after the live stream ends.
    * @returns {RequestBuilder} The request builder
    * @static
    */
-  static list(serviceUrl: string, ks: string, entryId: string, redirectFromEntryId: boolean): RequestBuilder {
+  static list(serviceUrl: string, vs: string, entryId: string, redirectFromEntryId: boolean): RequestBuilder {
     const headers: Map<string, string> = new Map();
     headers.set('Content-Type', 'application/json');
     const request = new RequestBuilder(headers);
@@ -48,7 +48,7 @@ export default class OVPBaseEntryService extends OVPService {
     request.method = 'POST';
     request.url = request.getUrl(serviceUrl);
     request.tag = 'list';
-    request.params = OVPBaseEntryService.getEntryListReqParams(entryId, ks, redirectFromEntryId);
+    request.params = OVPBaseEntryService.getEntryListReqParams(entryId, vs, redirectFromEntryId);
     return request;
   }
 
@@ -56,13 +56,13 @@ export default class OVPBaseEntryService extends OVPService {
    * Gets  baseentry.list service params
    * @function getEntryListReqParams
    * @param {string} entryId The entry ID
-   * @param {string} ks The ks
+   * @param {string} vs The vs
    * @param {boolean} redirectFromEntryId whether the live entry should continue and play the VOD one after the live stream ends.
-   * @returns {{ks: string, filter: {redirectFromEntryId: string}, responseProfile: {fields: string, type: number}}} The service params object
+   * @returns {{vs: string, filter: {redirectFromEntryId: string}, responseProfile: {fields: string, type: number}}} The service params object
    * @static
    */
-  static getEntryListReqParams(entryId: string, ks: string, redirectFromEntryId: boolean): any {
+  static getEntryListReqParams(entryId: string, vs: string, redirectFromEntryId: boolean): any {
     const filterParams = redirectFromEntryId ? {redirectFromEntryId: entryId} : {idEqual: entryId};
-    return {ks: ks, filter: filterParams, responseProfile: new BaseEntryResponseProfile()};
+    return {vs: vs, filter: filterParams, responseProfile: new BaseEntryResponseProfile()};
   }
 }

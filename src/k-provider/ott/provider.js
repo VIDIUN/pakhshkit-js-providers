@@ -7,8 +7,8 @@ import OTTSessionLoader from './loaders/session-loader';
 import OTTAssetLoader from './loaders/asset-loader';
 import OTTAssetListLoader from './loaders/asset-list-loader';
 import OTTProviderParser from './provider-parser';
-import KalturaAsset from './response-types/kaltura-asset';
-import KalturaPlaybackContext from './response-types/kaltura-playback-context';
+import VidiunAsset from './response-types/vidiun-asset';
+import VidiunPlaybackContext from './response-types/vidiun-playback-context';
 import MediaEntry from '../../entities/media-entry';
 import Error from '../../util/error/error';
 
@@ -31,22 +31,22 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
    * @returns {Promise<ProviderMediaConfigObject>} - The provider media config
    */
   getMediaConfig(mediaInfo: OTTProviderMediaInfoObject): Promise<ProviderMediaConfigObject> {
-    if (mediaInfo.ks) {
-      this.ks = mediaInfo.ks;
+    if (mediaInfo.vs) {
+      this.vs = mediaInfo.vs;
       this._isAnonymous = false;
     }
-    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.ks, this._networkRetryConfig);
+    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.vs, this._networkRetryConfig);
     return new Promise((resolve, reject) => {
       const entryId = mediaInfo.entryId;
       if (entryId) {
-        let ks: string = this.ks;
-        if (!ks) {
-          ks = '{1:result:ks}';
+        let vs: string = this.vs;
+        if (!vs) {
+          vs = '{1:result:vs}';
           this._dataLoader.add(OTTSessionLoader, {partnerId: this.partnerId});
         }
-        const contextType = mediaInfo.contextType || KalturaPlaybackContext.Type.PLAYBACK;
-        const mediaType = mediaInfo.mediaType || KalturaAsset.Type.MEDIA;
-        const assetReferenceType = mediaInfo.assetReferenceType || KalturaAsset.AssetReferenceType.MEDIA;
+        const contextType = mediaInfo.contextType || VidiunPlaybackContext.Type.PLAYBACK;
+        const mediaType = mediaInfo.mediaType || VidiunAsset.Type.MEDIA;
+        const assetReferenceType = mediaInfo.assetReferenceType || VidiunAsset.AssetReferenceType.MEDIA;
         const playbackContext = {
           mediaProtocol: mediaInfo.protocol,
           assetFileIds: mediaInfo.fileIds,
@@ -54,7 +54,7 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
         };
         this._dataLoader.add(OTTAssetLoader, {
           entryId: entryId,
-          ks: ks,
+          vs: vs,
           type: mediaType,
           playbackContext: playbackContext,
           assetReferenceType: assetReferenceType
@@ -99,10 +99,10 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
       if (data.has(OTTSessionLoader.id)) {
         const sessionLoader = data.get(OTTSessionLoader.id);
         if (sessionLoader && sessionLoader.response) {
-          mediaConfig.session.ks = sessionLoader.response;
+          mediaConfig.session.vs = sessionLoader.response;
         }
       } else {
-        mediaConfig.session.ks = this.ks;
+        mediaConfig.session.vs = this.vs;
       }
       if (data.has(OTTAssetLoader.id)) {
         const assetLoader = data.get(OTTAssetLoader.id);
@@ -130,20 +130,20 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
    * @returns {Promise<ProviderPlaylistObject>} - The provider playlist config
    */
   getEntryListConfig(entryListInfo: ProviderEntryListObject): Promise<ProviderPlaylistObject> {
-    if (entryListInfo.ks) {
-      this.ks = entryListInfo.ks;
+    if (entryListInfo.vs) {
+      this.vs = entryListInfo.vs;
       this._isAnonymous = false;
     }
-    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.ks, this._networkRetryConfig);
+    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.vs, this._networkRetryConfig);
     return new Promise((resolve, reject) => {
       const entries = entryListInfo.entries;
       if (entries && entries.length) {
-        let ks: string = this.ks;
-        if (!ks) {
-          ks = '{1:result:ks}';
+        let vs: string = this.vs;
+        if (!vs) {
+          vs = '{1:result:vs}';
           this._dataLoader.add(OTTSessionLoader, {partnerId: this.partnerId});
         }
-        this._dataLoader.add(OTTAssetListLoader, {entries, ks});
+        this._dataLoader.add(OTTAssetListLoader, {entries, vs});
         this._dataLoader.fetchData().then(
           response => {
             resolve(this._parseEntryListDataFromResponse(response));

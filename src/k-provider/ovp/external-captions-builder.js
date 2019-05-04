@@ -1,6 +1,6 @@
 // @flow
 
-const KalturaCaptionType: CaptionType = {
+const VidiunCaptionType: CaptionType = {
   SRT: '1',
   DFXP: '2',
   WEBVTT: '3',
@@ -17,9 +17,9 @@ class ExternalCaptionsBuilder {
     return captions.map(caption => {
       let url = caption.url;
       let type = CaptionsFormatsMap[caption.format];
-      if ([KalturaCaptionType.DFXP, KalturaCaptionType.CAP].includes(caption.format)) {
+      if ([VidiunCaptionType.DFXP, VidiunCaptionType.CAP].includes(caption.format)) {
         url = caption.webVttUrl;
-        type = CaptionsFormatsMap[KalturaCaptionType.WEBVTT];
+        type = CaptionsFormatsMap[VidiunCaptionType.WEBVTT];
       }
       return {
         default: !!caption.isDefault,

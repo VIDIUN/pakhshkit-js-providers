@@ -1,9 +1,9 @@
 //@flow
-import KalturaDrmPlaybackPluginData from '../../common/response-types/kaltura-drm-playback-plugin-data';
+import VidiunDrmPlaybackPluginData from '../../common/response-types/vidiun-drm-playback-plugin-data';
 
-export type OVPKalturaPlaybackSource = KalturaPlaybackSource;
+export type OVPVidiunPlaybackSource = VidiunPlaybackSource;
 
-export default class KalturaPlaybackSource {
+export default class VidiunPlaybackSource {
   /**
    * @member - source format according to delivery profile streamer type (applehttp, mpegdash etc.)
    * @type {string}
@@ -31,9 +31,9 @@ export default class KalturaPlaybackSource {
   flavorIds: string;
   /**
    * @member - drm data object containing relevant license url ,scheme name and certificate
-   * @type {Array<KalturaDrmPlaybackPluginData>}
+   * @type {Array<VidiunDrmPlaybackPluginData>}
    */
-  drm: Array<KalturaDrmPlaybackPluginData> = [];
+  drm: Array<VidiunDrmPlaybackPluginData> = [];
 
   /**
    * @constructor
@@ -46,7 +46,7 @@ export default class KalturaPlaybackSource {
     this.protocols = source.protocols;
     this.flavorIds = source.flavorIds;
     if (source.drm) {
-      source.drm.map(drm => this.drm.push(new KalturaDrmPlaybackPluginData(drm)));
+      source.drm.map(drm => this.drm.push(new VidiunDrmPlaybackPluginData(drm)));
     }
   }
 
