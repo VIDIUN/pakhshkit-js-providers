@@ -1,7 +1,7 @@
 //@flow
 import ServiceResult from '../../common/base-service-result';
 
-export default class KalturaUIConfResponse extends ServiceResult {
+export default class VidiunUIConfResponse extends ServiceResult {
   static Type: {[type: string]: number} = {
     PLAYER: 1,
     CONTRIBUTION_WIZARD: 2,
@@ -9,20 +9,20 @@ export default class KalturaUIConfResponse extends ServiceResult {
     ADVANCED_EDITOR: 4,
     PLAYLIST: 5,
     APP_STUDIO: 6,
-    KRECORD: 7,
+    VRECORD: 7,
     PLAYER_V3: 8,
-    KMC_ACCOUNT: 9,
-    KMC_ANALYTICS: 10,
-    KMC_CONTENT: 11,
-    KMC_DASHBOARD: 12,
-    KMC_LOGIN: 13,
+    VMC_ACCOUNT: 9,
+    VMC_ANALYTICS: 10,
+    VMC_CONTENT: 11,
+    VMC_DASHBOARD: 12,
+    VMC_LOGIN: 13,
     PLAYER_SL: 14,
     CLIENTSIDE_ENCODER: 15,
-    KMC_GENERAL: 16,
-    KMC_ROLES_AND_PERMISSIONS: 17,
+    VMC_GENERAL: 16,
+    VMC_ROLES_AND_PERMISSIONS: 17,
     CLIPPER: 18,
-    KSR: 19,
-    KUPLOAD: 20,
+    VSR: 19,
+    VUPLOAD: 20,
     WEBCASTING: 21
   };
 

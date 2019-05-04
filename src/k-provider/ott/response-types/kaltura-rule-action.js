@@ -1,5 +1,5 @@
 //@flow
-export default class KalturaRuleAction {
+export default class VidiunRuleAction {
   static Type: {[type: string]: string | number} = {
     BLOCK: 'BLOCK',
     START_DATE_OFFSET: 'START_DATE_OFFSET',

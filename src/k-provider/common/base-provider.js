@@ -6,7 +6,7 @@ import Error from '../../util/error/error';
 export default class BaseProvider<MI> {
   _partnerId: number;
   _widgetId: ?string;
-  _ks: string;
+  _vs: string;
   _uiConfId: ?number;
   _dataLoader: DataLoaderManager;
   _playerVersion: string;
@@ -30,12 +30,12 @@ export default class BaseProvider<MI> {
     return this._uiConfId;
   }
 
-  get ks(): string {
-    return this._ks;
+  get vs(): string {
+    return this._vs;
   }
 
-  set ks(value: string): void {
-    this._ks = value;
+  set vs(value: string): void {
+    this._vs = value;
   }
 
   get playerVersion(): string {
@@ -50,8 +50,8 @@ export default class BaseProvider<MI> {
     this._partnerId = options.partnerId;
     this._widgetId = options.widgetId;
     this._uiConfId = options.uiConfId;
-    this._isAnonymous = !options.ks;
-    this._ks = options.ks || '';
+    this._isAnonymous = !options.vs;
+    this._vs = options.vs || '';
     this._playerVersion = playerVersion;
     if (options.logLevel && this.LogLevel[options.logLevel]) {
       setLogLevel(this.LogLevel[options.logLevel]);

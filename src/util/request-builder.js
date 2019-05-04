@@ -1,7 +1,7 @@
 //@flow
 import Error from './error/error';
 
-const KALTURA_HEADER_PREFIX: string = 'x-';
+const VIDIUN_HEADER_PREFIX: string = 'x-';
 
 export default class RequestBuilder {
   /**
@@ -155,7 +155,7 @@ export default class RequestBuilder {
     return request
       .getAllResponseHeaders()
       .split('\n')
-      .filter(header => header.toLowerCase().indexOf(KALTURA_HEADER_PREFIX) === 0);
+      .filter(header => header.toLowerCase().indexOf(VIDIUN_HEADER_PREFIX) === 0);
   }
 
   _handleError(request: XMLHttpRequest, code: number, data: Object): Promise<*> | void {

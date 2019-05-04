@@ -1,32 +1,32 @@
 //@flow
 import ServiceResult from '../../common/base-service-result';
-import KalturaAccessControlMessage from '../../common/response-types/kaltura-access-control-message';
-import KalturaPlaybackSource from './kaltura-playback-source';
-import KalturaAccessControlModifyRequestHostRegexAction from './kaltura-access-control-modify-request-host-regex-action';
-import KalturaRuleAction from './kaltura-rule-action';
-import KalturaFlavorAsset from './kaltura-flavor-asset';
+import VidiunAccessControlMessage from '../../common/response-types/vidiun-access-control-message';
+import VidiunPlaybackSource from './vidiun-playback-source';
+import VidiunAccessControlModifyRequestHostRegexAction from './vidiun-access-control-modify-request-host-regex-action';
+import VidiunRuleAction from './vidiun-rule-action';
+import VidiunFlavorAsset from './vidiun-flavor-asset';
 
-export default class KalturaPlaybackContext extends ServiceResult {
+export default class VidiunPlaybackContext extends ServiceResult {
   /**
    * @member - The playback sources
-   * @type {Array<KalturaPlaybackSource>}
+   * @type {Array<VidiunPlaybackSource>}
    */
-  sources: Array<KalturaPlaybackSource> = [];
+  sources: Array<VidiunPlaybackSource> = [];
   /**
    * @member - Array of actions as received from the rules that invalidated
-   * @type {Array<KalturaRuleAction>}
+   * @type {Array<VidiunRuleAction>}
    */
-  actions: Array<KalturaRuleAction> = [];
+  actions: Array<VidiunRuleAction> = [];
   /**
    * @member - Array of actions as received from the rules that invalidated
-   * @type {Array<KalturaAccessControlMessage>}
+   * @type {Array<VidiunAccessControlMessage>}
    */
-  messages: Array<KalturaAccessControlMessage> = [];
+  messages: Array<VidiunAccessControlMessage> = [];
   /**
    * @member - The flavor assets
-   * @type {Array<KalturaFlavorAsset>}
+   * @type {Array<VidiunFlavorAsset>}
    */
-  flavorAssets: Array<KalturaFlavorAsset> = [];
+  flavorAssets: Array<VidiunFlavorAsset> = [];
 
   /**
    * @constructor
@@ -37,25 +37,25 @@ export default class KalturaPlaybackContext extends ServiceResult {
     if (!this.hasError) {
       const messages = response.messages;
       if (messages) {
-        messages.map(message => this.messages.push(new KalturaAccessControlMessage(message)));
+        messages.map(message => this.messages.push(new VidiunAccessControlMessage(message)));
       }
       const actions = response.actions;
       if (actions) {
         actions.map(action => {
-          if (action.type === KalturaRuleAction.Type.REQUEST_HOST_REGEX) {
-            this.actions.push(new KalturaAccessControlModifyRequestHostRegexAction(action));
+          if (action.type === VidiunRuleAction.Type.REQUEST_HOST_REGEX) {
+            this.actions.push(new VidiunAccessControlModifyRequestHostRegexAction(action));
           } else {
-            this.actions.push(new KalturaRuleAction(action));
+            this.actions.push(new VidiunRuleAction(action));
           }
         });
       }
       const sources = response.sources;
       if (sources) {
-        sources.map(source => this.sources.push(new KalturaPlaybackSource(source)));
+        sources.map(source => this.sources.push(new VidiunPlaybackSource(source)));
       }
       const flavorAssets = response.flavorAssets;
       if (flavorAssets) {
-        flavorAssets.map(flavor => this.flavorAssets.push(new KalturaFlavorAsset(flavor)));
+        flavorAssets.map(flavor => this.flavorAssets.push(new VidiunFlavorAsset(flavor)));
       }
     }
   }
@@ -64,22 +64,22 @@ export default class KalturaPlaybackContext extends ServiceResult {
     return this.getBlockAction() !== undefined;
   }
 
-  getBlockAction(): ?KalturaRuleAction {
-    return this.actions.find(action => action.type === KalturaRuleAction.Type.BLOCK);
+  getBlockAction(): ?VidiunRuleAction {
+    return this.actions.find(action => action.type === VidiunRuleAction.Type.BLOCK);
   }
 
-  getErrorMessages(): Array<KalturaAccessControlMessage> {
+  getErrorMessages(): Array<VidiunAccessControlMessage> {
     return this.messages;
   }
 
   /**
-   * Get the KalturaAccessControlModifyRequestHostRegexAction action
+   * Get the VidiunAccessControlModifyRequestHostRegexAction action
    * @function getRequestHostRegexAction
-   * @returns {?KalturaAccessControlModifyRequestHostRegexAction} The action
+   * @returns {?VidiunAccessControlModifyRequestHostRegexAction} The action
    * */
-  getRequestHostRegexAction(): ?KalturaAccessControlModifyRequestHostRegexAction {
-    const action = this.actions.find(action => action.type === KalturaRuleAction.Type.REQUEST_HOST_REGEX);
-    if (action instanceof KalturaAccessControlModifyRequestHostRegexAction) {
+  getRequestHostRegexAction(): ?VidiunAccessControlModifyRequestHostRegexAction {
+    const action = this.actions.find(action => action.type === VidiunRuleAction.Type.REQUEST_HOST_REGEX);
+    if (action instanceof VidiunAccessControlModifyRequestHostRegexAction) {
       return action;
     }
   }

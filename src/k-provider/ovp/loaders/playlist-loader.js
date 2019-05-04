@@ -2,8 +2,8 @@
 import RequestBuilder from '../../../util/request-builder';
 import OVPPlaylistService from '../services/playlist-service';
 import OVPConfiguration from '../config';
-import KalturaPlaylist from '../response-types/kaltura-playlist';
-import KalturaMediaEntries from '../response-types/kaltura-media-entries';
+import VidiunPlaylist from '../response-types/vidiun-playlist';
+import VidiunMediaEntries from '../response-types/vidiun-media-entries';
 
 export default class OVPPlaylistLoader implements ILoader {
   _playlistId: string;
@@ -32,8 +32,8 @@ export default class OVPPlaylistLoader implements ILoader {
   }
 
   set response(response: any) {
-    this._response.playlistData = new KalturaPlaylist(response[0].data);
-    this._response.playlistItems = new KalturaMediaEntries(response[1].data);
+    this._response.playlistData = new VidiunPlaylist(response[0].data);
+    this._response.playlistItems = new VidiunMediaEntries(response[1].data);
   }
 
   get response(): any {
@@ -50,8 +50,8 @@ export default class OVPPlaylistLoader implements ILoader {
   buildRequests(params: Object): Array<RequestBuilder> {
     const config = OVPConfiguration.get();
     const requests: Array<RequestBuilder> = [];
-    requests.push(OVPPlaylistService.get(config.serviceUrl, params.ks, params.playlistId));
-    requests.push(OVPPlaylistService.execute(config.serviceUrl, params.ks, params.playlistId));
+    requests.push(OVPPlaylistService.get(config.serviceUrl, params.vs, params.playlistId));
+    requests.push(OVPPlaylistService.execute(config.serviceUrl, params.vs, params.playlistId));
     return requests;
   }
 

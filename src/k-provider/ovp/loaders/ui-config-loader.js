@@ -1,6 +1,6 @@
 //@flow
 import OVPUIConfService from '../services/ui-conf-service';
-import KalturaUIConfResponse from '../response-types/kaltura-ui-conf-response';
+import VidiunUIConfResponse from '../response-types/vidiun-ui-conf-response';
 import OVPConfiguration from '../config';
 import RequestBuilder from '../../../util/request-builder';
 
@@ -22,7 +22,7 @@ export default class OVPUIConfigLoader implements ILoader {
   }
 
   set response(response: any) {
-    this._response.uiConf = new KalturaUIConfResponse(response[0].data);
+    this._response.uiConf = new VidiunUIConfResponse(response[0].data);
   }
 
   get response(): any {
@@ -56,7 +56,7 @@ export default class OVPUIConfigLoader implements ILoader {
   buildRequests(params: Object): Array<RequestBuilder> {
     const config = OVPConfiguration.get();
     let requests: Array<RequestBuilder> = [];
-    requests.push(OVPUIConfService.get(config.serviceUrl, params.ks, params.uiConfId));
+    requests.push(OVPUIConfService.get(config.serviceUrl, params.vs, params.uiConfId));
     return requests;
   }
 

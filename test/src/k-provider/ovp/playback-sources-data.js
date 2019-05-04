@@ -1,13 +1,13 @@
-import KalturaPlaybackSource from '../../../../src/k-provider/ovp/response-types/kaltura-playback-source';
+import VidiunPlaybackSource from '../../../../src/v-provider/ovp/response-types/vidiun-playback-source';
 
-export const kalturaSourceProtocolMismatch = new KalturaPlaybackSource({
+export const vidiunSourceProtocolMismatch = new VidiunPlaybackSource({
   format: 'applehttp',
   deliveryProfileId: 12345,
   url: 'myUrl',
   protocols: 'http',
   flavorIds: '0_mw390bu0,0_bx6b5i2a,0_ao23nl3z,0_lwxuraqs'
 });
-export const kalturaSourceProtocolMismatchFlavorAssets = [
+export const vidiunSourceProtocolMismatchFlavorAssets = [
   {
     id: '0_mw390bu0',
     flavorParamsId: 487041,
@@ -69,14 +69,14 @@ export const kalturaSourceProtocolMismatchFlavorAssets = [
     language: 'Undefined'
   }
 ];
-export const kalturaDashSource = new KalturaPlaybackSource({
+export const vidiunDashSource = new VidiunPlaybackSource({
   format: 'mpegdash',
   deliveryProfileId: 911,
   url: 'myUrl',
   protocols: 'http,https',
   flavorIds: '0_m131krws,0_5407xm9j,0_xcrwyk2n'
 });
-export const kalturaDashSourceFlavorAssets = [
+export const vidiunDashSourceFlavorAssets = [
   {
     id: '0_ep7yqavp',
     flavorParamsId: 582941,

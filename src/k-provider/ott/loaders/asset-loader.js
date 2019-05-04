@@ -2,10 +2,10 @@
 import OTTAssetService from '../services/asset-service';
 import OTTConfiguration from '../config';
 import RequestBuilder from '../../../util/request-builder';
-import KalturaPlaybackContext from '../response-types/kaltura-playback-context';
-import KalturaAsset from '../response-types/kaltura-asset';
+import VidiunPlaybackContext from '../response-types/vidiun-playback-context';
+import VidiunAsset from '../response-types/vidiun-asset';
 
-type OTTAssetLoaderResponse = {mediaDataResult: KalturaAsset, playBackContextResult: KalturaPlaybackContext};
+type OTTAssetLoaderResponse = {mediaDataResult: VidiunAsset, playBackContextResult: VidiunPlaybackContext};
 export type {OTTAssetLoaderResponse};
 
 export default class OTTAssetLoader implements ILoader {
@@ -35,8 +35,8 @@ export default class OTTAssetLoader implements ILoader {
   }
 
   set response(response: any) {
-    this._response.mediaDataResult = new KalturaAsset(response[0].data);
-    this._response.playBackContextResult = new KalturaPlaybackContext(response[1].data);
+    this._response.mediaDataResult = new VidiunAsset(response[0].data);
+    this._response.playBackContextResult = new VidiunPlaybackContext(response[1].data);
   }
 
   get response(): OTTAssetLoaderResponse {
@@ -53,8 +53,8 @@ export default class OTTAssetLoader implements ILoader {
   buildRequests(params: Object): Array<RequestBuilder> {
     const config = OTTConfiguration.get();
     const requests: Array<RequestBuilder> = [];
-    requests.push(OTTAssetService.get(config.serviceUrl, params.ks, params.entryId, params.assetReferenceType));
-    requests.push(OTTAssetService.getPlaybackContext(config.serviceUrl, params.ks, params.entryId, params.type, params.playbackContext));
+    requests.push(OTTAssetService.get(config.serviceUrl, params.vs, params.entryId, params.assetReferenceType));
+    requests.push(OTTAssetService.getPlaybackContext(config.serviceUrl, params.vs, params.entryId, params.type, params.playbackContext));
     return requests;
   }
 

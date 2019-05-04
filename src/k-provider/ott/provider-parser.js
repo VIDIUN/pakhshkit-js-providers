@@ -1,37 +1,37 @@
 //@flow
 import getLogger from '../../util/logger';
-import KalturaPlaybackSource from './response-types/kaltura-playback-source';
-import KalturaPlaybackContext from './response-types/kaltura-playback-context';
-import KalturaAsset from './response-types/kaltura-asset';
+import VidiunPlaybackSource from './response-types/vidiun-playback-source';
+import VidiunPlaybackContext from './response-types/vidiun-playback-context';
+import VidiunAsset from './response-types/vidiun-asset';
 import MediaEntry from '../../entities/media-entry';
 import Drm from '../../entities/drm';
 import MediaSource from '../../entities/media-source';
 import MediaSources from '../../entities/media-sources';
 import EntryList from '../../entities/entry-list';
 import {SupportedStreamFormat, isProgressiveSource} from '../../entities/media-format';
-import KalturaDrmPlaybackPluginData from '../common/response-types/kaltura-drm-playback-plugin-data';
-import KalturaRuleAction from './response-types/kaltura-rule-action';
-import KalturaAccessControlMessage from '../common/response-types/kaltura-access-control-message';
+import VidiunDrmPlaybackPluginData from '../common/response-types/vidiun-drm-playback-plugin-data';
+import VidiunRuleAction from './response-types/vidiun-rule-action';
+import VidiunAccessControlMessage from '../common/response-types/vidiun-access-control-message';
 import type {OTTAssetLoaderResponse} from './loaders/asset-loader';
 
-const LIVE_ASST_OBJECT_TYPE: string = 'KalturaLiveAsset';
+const LIVE_ASST_OBJECT_TYPE: string = 'VidiunLiveAsset';
 
 const MediaTypeCombinations: {[mediaType: string]: Object} = {
-  [KalturaAsset.Type.MEDIA]: {
-    [KalturaPlaybackContext.Type.TRAILER]: () => ({type: MediaEntry.Type.VOD}),
-    [KalturaPlaybackContext.Type.PLAYBACK]: mediaAssetData => {
+  [VidiunAsset.Type.MEDIA]: {
+    [VidiunPlaybackContext.Type.TRAILER]: () => ({type: MediaEntry.Type.VOD}),
+    [VidiunPlaybackContext.Type.PLAYBACK]: mediaAssetData => {
       if (parseInt(mediaAssetData.externalIds) > 0 || mediaAssetData.objectType === LIVE_ASST_OBJECT_TYPE) {
         return {type: MediaEntry.Type.LIVE, dvrStatus: 0};
       }
       return {type: MediaEntry.Type.VOD};
     }
   },
-  [KalturaAsset.Type.EPG]: {
-    [KalturaPlaybackContext.Type.CATCHUP]: () => ({type: MediaEntry.Type.VOD}),
-    [KalturaPlaybackContext.Type.START_OVER]: () => ({type: MediaEntry.Type.LIVE, dvrStatus: 1})
+  [VidiunAsset.Type.EPG]: {
+    [VidiunPlaybackContext.Type.CATCHUP]: () => ({type: MediaEntry.Type.VOD}),
+    [VidiunPlaybackContext.Type.START_OVER]: () => ({type: MediaEntry.Type.LIVE, dvrStatus: 1})
   },
-  [KalturaAsset.Type.RECORDING]: {
-    [KalturaPlaybackContext.Type.PLAYBACK]: () => ({type: MediaEntry.Type.VOD})
+  [VidiunAsset.Type.RECORDING]: {
+    [VidiunPlaybackContext.Type.PLAYBACK]: () => ({type: MediaEntry.Type.VOD})
   }
 };
 
@@ -52,13 +52,13 @@ export default class OTTProviderParser {
     OTTProviderParser._fillBaseData(mediaEntry, assetResponse);
     const playbackContext = assetResponse.playBackContextResult;
     const mediaAsset = assetResponse.mediaDataResult;
-    const kalturaSources = playbackContext.sources;
-    const filteredKalturaSources = OTTProviderParser._filterSourcesByFormats(kalturaSources, requestData.formats);
-    mediaEntry.sources = OTTProviderParser._getParsedSources(filteredKalturaSources);
+    const vidiunSources = playbackContext.sources;
+    const filteredVidiunSources = OTTProviderParser._filterSourcesByFormats(vidiunSources, requestData.formats);
+    mediaEntry.sources = OTTProviderParser._getParsedSources(filteredVidiunSources);
     const typeData = OTTProviderParser._getMediaType(mediaAsset.data, requestData.mediaType, requestData.contextType);
     mediaEntry.type = typeData.type;
     mediaEntry.dvrStatus = typeData.dvrStatus;
-    mediaEntry.duration = Math.max.apply(Math, kalturaSources.map(source => source.duration));
+    mediaEntry.duration = Math.max.apply(Math, vidiunSources.map(source => source.duration));
     return mediaEntry;
   }
 
@@ -157,31 +157,31 @@ export default class OTTProviderParser {
   }
 
   /**
-   * Filtered the kalturaSources array by device type.
-   * @param {Array<KalturaPlaybackSource>} kalturaSources - The kaltura sources.
+   * Filtered the vidiunSources array by device type.
+   * @param {Array<VidiunPlaybackSource>} vidiunSources - The vidiun sources.
    * @param {Array<string>} formats - Partner device formats.
-   * @returns {Array<KalturaPlaybackSource>} - Filtered kalturaSources array.
+   * @returns {Array<VidiunPlaybackSource>} - Filtered vidiunSources array.
    * @private
    */
-  static _filterSourcesByFormats(kalturaSources: Array<KalturaPlaybackSource>, formats: Array<string>): Array<KalturaPlaybackSource> {
+  static _filterSourcesByFormats(vidiunSources: Array<VidiunPlaybackSource>, formats: Array<string>): Array<VidiunPlaybackSource> {
     if (formats.length > 0) {
-      kalturaSources = kalturaSources.filter(source => formats.includes(source.type));
+      vidiunSources = vidiunSources.filter(source => formats.includes(source.type));
     }
-    return kalturaSources;
+    return vidiunSources;
   }
 
   /**
    * Returns the parsed sources
    * @function _getParsedSources
-   * @param {Array<KalturaPlaybackSource>} kalturaSources - The kaltura sources
+   * @param {Array<VidiunPlaybackSource>} vidiunSources - The vidiun sources
    * @param {Object} playbackContext - The playback context
    * @return {MediaSources} - A media sources
    * @static
    * @private
    */
-  static _getParsedSources(kalturaSources: Array<KalturaPlaybackSource>): MediaSources {
+  static _getParsedSources(vidiunSources: Array<VidiunPlaybackSource>): MediaSources {
     const sources = new MediaSources();
-    const addAdaptiveSource = (source: KalturaPlaybackSource) => {
+    const addAdaptiveSource = (source: VidiunPlaybackSource) => {
       const parsedSource = OTTProviderParser._parseAdaptiveSource(source);
       if (parsedSource) {
         const sourceFormat = SupportedStreamFormat.get(source.format);
@@ -189,12 +189,12 @@ export default class OTTProviderParser {
       }
     };
     const parseAdaptiveSources = () => {
-      kalturaSources.filter(source => !isProgressiveSource(source.format)).forEach(addAdaptiveSource);
+      vidiunSources.filter(source => !isProgressiveSource(source.format)).forEach(addAdaptiveSource);
     };
     const parseProgressiveSources = () => {
-      kalturaSources.filter(source => isProgressiveSource(source.format)).forEach(addAdaptiveSource);
+      vidiunSources.filter(source => isProgressiveSource(source.format)).forEach(addAdaptiveSource);
     };
-    if (kalturaSources && kalturaSources.length > 0) {
+    if (vidiunSources && vidiunSources.length > 0) {
       parseAdaptiveSources();
       parseProgressiveSources();
     }
@@ -204,31 +204,31 @@ export default class OTTProviderParser {
   /**
    * Returns a parsed adaptive source
    * @function _parseAdaptiveSource
-   * @param {KalturaPlaybackSource} kalturaSource - A kaltura source
-   * @returns {?MediaSource} - The parsed adaptive kalturaSource
+   * @param {VidiunPlaybackSource} vidiunSource - A vidiun source
+   * @returns {?MediaSource} - The parsed adaptive vidiunSource
    * @static
    * @private
    */
-  static _parseAdaptiveSource(kalturaSource: ?KalturaPlaybackSource): ?MediaSource {
+  static _parseAdaptiveSource(vidiunSource: ?VidiunPlaybackSource): ?MediaSource {
     const mediaSource = new MediaSource();
-    if (kalturaSource) {
-      const playUrl = kalturaSource.url;
-      const mediaFormat = SupportedStreamFormat.get(kalturaSource.format);
+    if (vidiunSource) {
+      const playUrl = vidiunSource.url;
+      const mediaFormat = SupportedStreamFormat.get(vidiunSource.format);
       if (mediaFormat) {
         mediaSource.mimetype = mediaFormat.mimeType;
       }
       if (!playUrl) {
         OTTProviderParser._logger.error(
-          `failed to create play url from source, discarding source: (${kalturaSource.fileId}), ${kalturaSource.format}.`
+          `failed to create play url from source, discarding source: (${vidiunSource.fileId}), ${vidiunSource.format}.`
         );
         return null;
       }
       mediaSource.url = playUrl;
-      mediaSource.id = kalturaSource.fileId + ',' + kalturaSource.format;
-      if (kalturaSource.hasDrmData()) {
+      mediaSource.id = vidiunSource.fileId + ',' + vidiunSource.format;
+      if (vidiunSource.hasDrmData()) {
         const drmParams: Array<Drm> = [];
-        kalturaSource.drm.forEach(drm => {
-          drmParams.push(new Drm(drm.licenseURL, KalturaDrmPlaybackPluginData.Scheme[drm.scheme], drm.certificate));
+        vidiunSource.drm.forEach(drm => {
+          drmParams.push(new Drm(drm.licenseURL, VidiunDrmPlaybackPluginData.Scheme[drm.scheme], drm.certificate));
         });
         mediaSource.drmData = drmParams;
       }
@@ -240,11 +240,11 @@ export default class OTTProviderParser {
     return response.playBackContextResult.hasBlockAction();
   }
 
-  static getBlockAction(response): ?KalturaRuleAction {
+  static getBlockAction(response): ?VidiunRuleAction {
     return response.playBackContextResult.getBlockAction();
   }
 
-  static getErrorMessages(response: OTTAssetLoaderResponse): Array<KalturaAccessControlMessage> {
+  static getErrorMessages(response: OTTAssetLoaderResponse): Array<VidiunAccessControlMessage> {
     return response.playBackContextResult.getErrorMessages();
   }
 }
