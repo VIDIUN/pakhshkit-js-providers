@@ -7,10 +7,10 @@ export default class OVPDataLoaderManager extends DataLoaderManager {
    * @constructor
    * @param {string} playerVersion - player version
    * @param {string} partnerId - partner id
-   * @param {string} ks - ks
+   * @param {string} vs - vs
    */
-  constructor(playerVersion: string, partnerId: number, ks: string = "") {
+  constructor(playerVersion: string, partnerId: number, vs: string = "") {
     super();
-    this._multiRequest = OVPService.getMultiRequest(playerVersion, ks, partnerId);
+    this._multiRequest = OVPService.getMultiRequest(playerVersion, vs, partnerId);
   }
 }

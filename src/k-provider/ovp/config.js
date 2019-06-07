@@ -2,8 +2,8 @@
 import {clone} from '../../util/clone'
 
 const defaultConfig: Object = {
-  serviceUrl: "https://cdnapisec.kaltura.com",
-  cdnUrl: "//cdnapisec.kaltura.com",
+  serviceUrl: "https://cdnapisec.vidiun.com",
+  cdnUrl: "//cdnapisec.vidiun.com",
   serviceParams: {
     apiVersion: '3.3.0',
     format: 1

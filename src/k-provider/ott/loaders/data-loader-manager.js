@@ -6,10 +6,10 @@ export default class OTTDataLoaderManager extends DataLoaderManager {
   /**
    * @constructor
    * @param {string} partnerId - partner id
-   * @param {string} ks - ks
+   * @param {string} vs - vs
    */
-  constructor(partnerId: number, ks: string = "") {
+  constructor(partnerId: number, vs: string = "") {
     super();
-    this._multiRequest = OTTService.getMultiRequest(ks, partnerId);
+    this._multiRequest = OTTService.getMultiRequest(vs, partnerId);
   }
 }

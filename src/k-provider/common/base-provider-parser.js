@@ -3,8 +3,8 @@ import {SupportedStreamFormat} from '../../entities/media-format'
 import MediaEntry from '../../entities/media-entry'
 import MediaSources from '../../entities/media-sources'
 import MediaSource from '../../entities/media-source'
-import type {OTTKalturaPlaybackSource} from '../ott/response-types/kaltura-playback-source'
-import type {OVPKalturaPlaybackSource} from '../ovp/response-types/kaltura-playback-source'
+import type {OTTVidiunPlaybackSource} from '../ott/response-types/vidiun-playback-source'
+import type {OVPVidiunPlaybackSource} from '../ovp/response-types/vidiun-playback-source'
 
 export default class BaseProviderParser {
   static getMediaEntry(...parms): MediaEntry { // eslint-disable-line no-unused-vars
@@ -19,7 +19,7 @@ export default class BaseProviderParser {
     throw new TypeError(`_parseAdaptiveSource method must be implement by the derived class`);
   }
 
-  static _isProgressiveSource(source: OVPKalturaPlaybackSource | OTTKalturaPlaybackSource): boolean {
+  static _isProgressiveSource(source: OVPVidiunPlaybackSource | OTTVidiunPlaybackSource): boolean {
     const sourceFormat = SupportedStreamFormat.get(source.format);
     return !!sourceFormat && sourceFormat.name === 'mp4';
   }
