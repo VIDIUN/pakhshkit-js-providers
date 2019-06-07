@@ -79,7 +79,7 @@ Object.assign(providersConfig.output, {
 Object.assign(servicesConfig.entry, {
   "analytics": "v-provider/ovp/services/analytics/index.js",
   "stats": "v-provider/ovp/services/stats/index.js",
-  "bookmark": "v-provider/ott/services/boovmark/index.js"
+  "bookmark": "v-provider/ott/services/bookmark/index.js"
 });
 
 Object.assign(servicesConfig.output, {
