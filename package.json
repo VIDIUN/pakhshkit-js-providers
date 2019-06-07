@@ -1,5 +1,5 @@
 {
-  "name": "playkit-js-providers",
+  "name": "pakhshkit-js-providers",
   "version": "2.5.0",
   "description": "",
   "scripts": {
@@ -68,10 +68,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaltura/playkit-js-providers.git"
+    "url": "git+https://github.com/vidiun/pakhshkit-js-providers.git"
   },
   "bugs": {
-    "url": "https://github.com/kaltura/playkit-js-providers/issues"
+    "url": "https://github.com/vidiun/pakhshkit-js-providers/issues"
   },
-  "homepage": "https://github.com/kaltura/playkit-js-providers#readme"
+  "homepage": "https://github.com/vidiun/pakhshkit-js-providers#readme"
 }

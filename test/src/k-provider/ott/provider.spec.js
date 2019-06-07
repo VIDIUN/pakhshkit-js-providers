@@ -1,8 +1,8 @@
-import OTTProvider from '../../../../src/k-provider/ott/provider'
+import OTTProvider from '../../../../src/v-provider/ott/provider'
 import * as BE_DATA from './be-data'
 import * as MEDIA_CONFIG_DATA from './media-config-data'
-import {MultiRequestResult} from '../../../../src/k-provider/common/multi-request-builder'
-import MultiRequestBuilder from '../../../../src/k-provider/common/multi-request-builder'
+import {MultiRequestResult} from '../../../../src/v-provider/common/multi-request-builder'
+import MultiRequestBuilder from '../../../../src/v-provider/common/multi-request-builder'
 
 const partnerId = 198;
 const playerVersion = '1.2.3';

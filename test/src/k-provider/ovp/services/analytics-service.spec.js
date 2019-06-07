@@ -1,6 +1,6 @@
-import OVPAnalyticsService from '../../../../../src/k-provider/ovp/services/analytics/analytics-service'
+import OVPAnalyticsService from '../../../../../src/v-provider/ovp/services/analytics/analytics-service'
 import RequestBuilder from '../../../../../src/util/request-builder'
-import OVPConfiguration from '../../../../../src/k-provider/ovp/config'
+import OVPConfiguration from '../../../../../src/v-provider/ovp/config'
 import {param} from '../../../../../src/util/param'
 
 describe('analytics service - trackEvent', function () {

@@ -14,7 +14,7 @@ export default class PlaySourceUrlBuilder {
     const cdnUrl: string = config.cdnUrl;
     const partnerId: string = urlParams.partnerId;
     const entryId: string = urlParams.entryId;
-    const ks: string = urlParams.ks;
+    const vs: string = urlParams.vs;
     const uiConfId: string = urlParams.uiConfId;
     const format: string = urlParams.format;
     const protocol: string = urlParams.protocol;
@@ -38,8 +38,8 @@ export default class PlaySourceUrlBuilder {
       playUrl += "/uiConfId/" + uiConfId;
     }
 
-    if (ks !== "") {
-      playUrl += "/ks/" + ks;
+    if (vs !== "") {
+      playUrl += "/vs/" + vs;
     }
 
     playUrl += "/a." + extension;

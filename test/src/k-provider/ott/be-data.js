@@ -1,8 +1,8 @@
 const AnonymousEntryWithoutUIConfWithDrmData = {
   "result": [{
-    "ks": "djJ8MTk4fHFNlNTFP8NV_WXoPn3CJnQRIJhCe4zD9g5voCHCgHJRanv2ubEBLLl9Gb13CxfBTGWZpTP_pD_fOirT3-L4F0kDIdJRrkShBxjuRI1-0nz2ublJJd48QKzLAqW79y7Lzoj6ngfv1uHGC7xxPtUqcSw=",
+    "vs": "djJ8MTk4fHFNlNTFP8NV_WXoPn3CJnQRIJhCe4zD9g5voCHCgHJRanv2ubEBLLl9Gb13CxfBTGWZpTP_pD_fOirT3-L4F0kDIdJRrkShBxjuRI1-0nz2ublJJd48QKzLAqW79y7Lzoj6ngfv1uHGC7xxPtUqcSw=",
     "refreshToken": "261623e4a727475a99898a0b7a39febf",
-    "objectType": "KalturaLoginSession"
+    "objectType": "VidiunLoginSession"
   }, {
     "catchUpBuffer": 0,
     "trickPlayBuffer": 0,
@@ -20,7 +20,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 302,
@@ -29,7 +29,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 568,
@@ -38,7 +38,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 960,
@@ -47,7 +47,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 1280,
@@ -56,7 +56,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 2048,
@@ -65,7 +65,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 103,
@@ -74,7 +74,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 149,
@@ -83,7 +83,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 212,
@@ -92,7 +92,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 355,
@@ -101,7 +101,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 800,
@@ -110,7 +110,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 600,
@@ -119,7 +119,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 282,
@@ -128,7 +128,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:3",
       "width": 180,
@@ -137,7 +137,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "d3d223391f314cab814d06b8c85682a5_2",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 105,
@@ -146,7 +146,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 195,
@@ -155,7 +155,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 105,
@@ -164,7 +164,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 70,
@@ -173,7 +173,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 590,
@@ -182,7 +182,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 300,
@@ -191,7 +191,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "2:1",
       "width": 200,
@@ -200,7 +200,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "0d4ddd6656714d4cb0334530a57d1a1a_17",
       "isDefault": true,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "4:3",
       "width": 400,
@@ -209,7 +209,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 0,
       "id": "b379e398d9ef4a31827fa1c10aa10f47_3",
       "isDefault": true,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }, {
       "ratio": "16:9",
       "width": 1080,
@@ -218,171 +218,171 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "version": 3,
       "id": "afa4d5c3b56c4476baca9897873d4a34_1",
       "isDefault": false,
-      "objectType": "KalturaMediaImage"
+      "objectType": "VidiunMediaImage"
     }],
     "mediaFiles": [{
       "assetId": 480097,
       "id": 728179,
       "type": "Mobile_Devices_Main_HD",
-      "url": "http://cdnapi.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
+      "url": "http://cdnapi.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728180,
       "type": "Mobile_Devices_Main_HD_Dash",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728181,
       "type": "Mobile_Devices_Main_SD_Dash",
-      "url": "http://cdnapi.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
+      "url": "http://cdnapi.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728182,
       "type": "Mobile_Devices_Main_SD_FP",
-      "url": "http://cdnapi.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
+      "url": "http://cdnapi.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728183,
       "type": "Mobile_Devices_Main_HD_FP",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/http/f/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728184,
       "type": "Web_HD_Dash",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/https/f/a.mpd",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/https/f/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728185,
       "type": "Web_HD_FP",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/https/f/a.m3u8",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/https/f/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728186,
       "type": "Web HD",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/https/f/a.m3u8",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/applehttp/tags/ipadnew/protocol/https/f/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728187,
       "type": "Mobile_Devices_Main_Download",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/mpegdash/tags/dash/protocol/http/f/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }, {
       "assetId": 480097,
       "id": 728188,
       "type": "Mobile_Devices_Main_SD",
-      "url": "https://cdnapisec.kaltura.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/url/tags/widevine/protocol/http/f/a.wvm",
+      "url": "https://cdnapisec.vidiun.com/p/2091671/sp/209167100/playManifest/entryId/1_tmeqe2n9/format/url/tags/widevine/protocol/http/f/a.wvm",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_9crpi8m5,1_tmeqe2n9_1_r64bcvp1",
-      "objectType": "KalturaMediaFile"
+      "objectType": "VidiunMediaFile"
     }],
     "metas": {
-      "synopsis": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "Short title": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "Runtime": {"value": "92", "objectType": "KalturaMultilingualStringValue"},
-      "Catchup logo URL": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "App Link": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "Country": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "QUALITY": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "Epg ID": {"value": "", "objectType": "KalturaMultilingualStringValue"},
-      "Release year": {"value": 2017, "objectType": "KalturaDoubleValue"},
-      "Catchup allowed": {"value": false, "objectType": "KalturaBooleanValue"}
+      "synopsis": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "Short title": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "Runtime": {"value": "92", "objectType": "VidiunMultilingualStringValue"},
+      "Catchup logo URL": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "App Link": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "Country": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "QUALITY": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "Epg ID": {"value": "", "objectType": "VidiunMultilingualStringValue"},
+      "Release year": {"value": 2017, "objectType": "VidiunDoubleValue"},
+      "Catchup allowed": {"value": false, "objectType": "VidiunBooleanValue"}
     },
     "tags": {
       "Free": {
-        "objects": [{"value": "nirit", "objectType": "KalturaMultilingualStringValue"}, {
+        "objects": [{"value": "nirit", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "nirit",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "nirit", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "nirit", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "Genre": {
-        "objects": [{"value": "Comedy", "objectType": "KalturaMultilingualStringValue"}, {
+        "objects": [{"value": "Comedy", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Comedy",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Comedy", "objectType": "KalturaMultilingualStringValue"}, {
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Comedy", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Drama",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Kids", "objectType": "KalturaMultilingualStringValue"}, {
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Kids", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Kids",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Kids", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Kids", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "Main cast": {
         "objects": [{
           "value": "Anna Kendrick",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Anna Kendrick", "objectType": "KalturaMultilingualStringValue"}, {
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Anna Kendrick", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Anna Kendrick",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Justin Timberlake", "objectType": "KalturaMultilingualStringValue"}, {
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Justin Timberlake", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Justin Timberlake",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Justin Timberlake", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Justin Timberlake", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "Director": {
         "objects": [{
           "value": "Walt Dohrn",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Walt Dohrn", "objectType": "KalturaMultilingualStringValue"}, {
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Walt Dohrn", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Walt Dohrn",
-          "objectType": "KalturaMultilingualStringValue"
-        }], "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }], "objectType": "VidiunMultilingualStringValueArray"
       },
       "Parental Rating": {
         "objects": [{
           "value": "PG",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Parental - 8", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Parental - 8", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "Studio": {
-        "objects": [{"value": "Pixar", "objectType": "KalturaMultilingualStringValue"}, {
+        "objects": [{"value": "Pixar", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "Pixar",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "Pixar", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "Pixar", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "Country": {
-        "objects": [{"value": "USA", "objectType": "KalturaMultilingualStringValue"}, {
+        "objects": [{"value": "USA", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "USA",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "USA", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "USA", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       },
       "QUALITY": {
-        "objects": [{"value": "hd", "objectType": "KalturaMultilingualStringValue"}, {
+        "objects": [{"value": "hd", "objectType": "VidiunMultilingualStringValue"}, {
           "value": "hd",
-          "objectType": "KalturaMultilingualStringValue"
-        }, {"value": "hd", "objectType": "KalturaMultilingualStringValue"}],
-        "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValue"
+        }, {"value": "hd", "objectType": "VidiunMultilingualStringValue"}],
+        "objectType": "VidiunMultilingualStringValueArray"
       }
     },
     "startDate": 1484812560,
@@ -391,7 +391,7 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
     "enableCatchUp": false,
     "enableStartOver": false,
     "enableTrickPlay": false,
-    "objectType": "KalturaMediaAsset"
+    "objectType": "VidiunMediaAsset"
   }, {
     "sources": [{
       "format": "applehttp",
@@ -399,131 +399,131 @@ const AnonymousEntryWithoutUIConfWithDrmData = {
       "assetId": 480097,
       "id": 728179,
       "type": "Mobile_Devices_Main_HD",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728179/contextType/PLAYBACK/a.m3u8",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728179/contextType/PLAYBACK/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "mpegdash",
       "protocols": "https",
       "drm": [{
         "scheme": "PLAYREADY_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODAiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=ZOLdFeGe54PzgUBAXzQ9GYU1mp4%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODAiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=ZOLdFeGe54PzgUBAXzQ9GYU1mp4%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }, {
         "scheme": "WIDEVINE_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODAiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=ZOLdFeGe54PzgUBAXzQ9GYU1mp4%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODAiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=ZOLdFeGe54PzgUBAXzQ9GYU1mp4%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }],
       "assetId": 480097,
       "id": 728180,
       "type": "Mobile_Devices_Main_HD_Dash",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728180/contextType/PLAYBACK/a.mpd",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728180/contextType/PLAYBACK/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "mpegdash",
       "protocols": "http",
       "drm": [{
         "scheme": "PLAYREADY_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODEiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=bMcDzZozJh%2fal%2f%2bOiqthRfpaT2k%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODEiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=bMcDzZozJh%2fal%2f%2bOiqthRfpaT2k%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }, {
         "scheme": "WIDEVINE_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODEiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=bMcDzZozJh%2fal%2f%2bOiqthRfpaT2k%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODEiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=bMcDzZozJh%2fal%2f%2bOiqthRfpaT2k%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }],
       "assetId": 480097,
       "id": 728181,
       "type": "Mobile_Devices_Main_SD_Dash",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728181/contextType/PLAYBACK/a.mpd",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728181/contextType/PLAYBACK/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "applehttp",
       "protocols": "http",
       "drm": [{
         "certificate": "MIIE6TCCA9GgAwIBAgIIENeCqzQk/C4wDQYJKoZIhvcNAQEFBQAwfzELMAkGA1UEBhMCVVMxEzARBgNVBAoMCkFwcGxlIEluYy4xJjAkBgNVBAsMHUFwcGxlIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MTMwMQYDVQQDDCpBcHBsZSBLZXkgU2VydmljZXMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTYwNTIwMTAxNDM1WhcNMTgwNTIxMTAxNDM1WjB8MQswCQYDVQQGEwJVUzEhMB8GA1UECgwYRGFpIFRydXllbiBIaW5oIFZpZXQgTmFtMRMwEQYDVQQLDAo0NkEzVkI4S05FMTUwMwYDVQQDDCxGYWlyUGxheSBTdHJlYW1pbmc6IERhaSBUcnV5ZW4gSGluaCBWaWV0IE5hbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxOpAcmYS8tPhh5Uk8C+0JzWy3CHJeU6odJXziTER49EEZnXHbfmIZpC1J9oMFVg6HTi5qFYgyvE19Iko7g2u0SubbM+WU6NEtzC5Mh5sjA4h3bOLSiC9lbBF9yIQiQ40Slar7EEhJRAJ1yAevMjMbAXU5YZjphamjVc0i3HB5UkCAwEAAaOCAe4wggHqMB0GA1UdDgQWBBQ1657dTf5GhGZap1ODbUTjL4AiPTAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFGPkR1TLhXFZRiyDrMxEMWRnAyy+MIHiBgNVHSAEgdowgdcwgdQGCSqGSIb3Y2QFATCBxjCBwwYIKwYBBQUHAgIwgbYMgbNSZWxpYW5jZSBvbiB0aGlzIGNlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBhc3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFyZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRlIHBvbGljeSBhbmQgY2VydGlmaWNhdGlvbiBwcmFjdGljZSBzdGF0ZW1lbnRzLjA1BgNVHR8ELjAsMCqgKKAmhiRodHRwOi8vY3JsLmFwcGxlLmNvbS9rZXlzZXJ2aWNlcy5jcmwwDgYDVR0PAQH/BAQDAgUgMDwGCyqGSIb3Y2QGDQEDAQH/BCoBcTFhMm45bWs4dWRmYWhtaWQwdmYydWh5N25hZmVxZHZoOXZob2c2b3YwMAYLKoZIhvdjZAYNAQQBAf8EHgE3eGRnd3MydWdtNDZxdGxjbGhjY2pka3J2bm56YzANBgkqhkiG9w0BAQUFAAOCAQEAP4VtMfsSO6mNAgK0AfoJgMGQ+1xhMhHYjBQdcudB3qzSznAj/u29LGPlsQW+jRB0VZJM5jBtP9n1kElo8IBnD7h1iTnHgd1v+MIGqcI+S+g5Ga+h0LmPNObHBuFVDGFqRXKv5LWI6KZ+7KNNSo4p8v7WV2JfYGDRoTtk4sA5GGw8Kyb2DNC+0+YBoZjW78Tu9fM6RanDmfMjFWpe2jQ9q9uBirOWkcVmwpNud/N61Vz3RAhmYuqYUE21R/1mLr+dBYZ54WLsI3za+bBQe3QjpYtJvJnEJIBDzXHia8Alo9KhNOGxMeexJhQXx0KM6XH2DVUf6KMrr5cH7bIdwbSCAQ==",
         "scheme": "FAIRPLAY",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/fps/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODIiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NyIsImZpbGVzIjoiIiwidXNlcl90b2tlbiI6ImRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0iLCJ1ZGlkIjoiIiwiYWRkaXRpb25hbF9jYXNfc3lzdGVtIjoxOTh9&signature=Ch65ih3S1%2bIXVl7mZywrIRnSpSg%3d",
-        "objectType": "KalturaFairPlayPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/fps/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODIiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NyIsImZpbGVzIjoiIiwidXNlcl90b2tlbiI6ImRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0iLCJ1ZGlkIjoiIiwiYWRkaXRpb25hbF9jYXNfc3lzdGVtIjoxOTh9&signature=Ch65ih3S1%2bIXVl7mZywrIRnSpSg%3d",
+        "objectType": "VidiunFairPlayPlaybackPluginData"
       }],
       "assetId": 480097,
       "id": 728182,
       "type": "Mobile_Devices_Main_SD_FP",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728182/contextType/PLAYBACK/a.m3u8",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728182/contextType/PLAYBACK/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "applehttp",
       "protocols": "https",
       "drm": [{
         "certificate": "MIIE6TCCA9GgAwIBAgIIENeCqzQk/C4wDQYJKoZIhvcNAQEFBQAwfzELMAkGA1UEBhMCVVMxEzARBgNVBAoMCkFwcGxlIEluYy4xJjAkBgNVBAsMHUFwcGxlIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MTMwMQYDVQQDDCpBcHBsZSBLZXkgU2VydmljZXMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTYwNTIwMTAxNDM1WhcNMTgwNTIxMTAxNDM1WjB8MQswCQYDVQQGEwJVUzEhMB8GA1UECgwYRGFpIFRydXllbiBIaW5oIFZpZXQgTmFtMRMwEQYDVQQLDAo0NkEzVkI4S05FMTUwMwYDVQQDDCxGYWlyUGxheSBTdHJlYW1pbmc6IERhaSBUcnV5ZW4gSGluaCBWaWV0IE5hbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxOpAcmYS8tPhh5Uk8C+0JzWy3CHJeU6odJXziTER49EEZnXHbfmIZpC1J9oMFVg6HTi5qFYgyvE19Iko7g2u0SubbM+WU6NEtzC5Mh5sjA4h3bOLSiC9lbBF9yIQiQ40Slar7EEhJRAJ1yAevMjMbAXU5YZjphamjVc0i3HB5UkCAwEAAaOCAe4wggHqMB0GA1UdDgQWBBQ1657dTf5GhGZap1ODbUTjL4AiPTAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFGPkR1TLhXFZRiyDrMxEMWRnAyy+MIHiBgNVHSAEgdowgdcwgdQGCSqGSIb3Y2QFATCBxjCBwwYIKwYBBQUHAgIwgbYMgbNSZWxpYW5jZSBvbiB0aGlzIGNlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBhc3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFyZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRlIHBvbGljeSBhbmQgY2VydGlmaWNhdGlvbiBwcmFjdGljZSBzdGF0ZW1lbnRzLjA1BgNVHR8ELjAsMCqgKKAmhiRodHRwOi8vY3JsLmFwcGxlLmNvbS9rZXlzZXJ2aWNlcy5jcmwwDgYDVR0PAQH/BAQDAgUgMDwGCyqGSIb3Y2QGDQEDAQH/BCoBcTFhMm45bWs4dWRmYWhtaWQwdmYydWh5N25hZmVxZHZoOXZob2c2b3YwMAYLKoZIhvdjZAYNAQQBAf8EHgE3eGRnd3MydWdtNDZxdGxjbGhjY2pka3J2bm56YzANBgkqhkiG9w0BAQUFAAOCAQEAP4VtMfsSO6mNAgK0AfoJgMGQ+1xhMhHYjBQdcudB3qzSznAj/u29LGPlsQW+jRB0VZJM5jBtP9n1kElo8IBnD7h1iTnHgd1v+MIGqcI+S+g5Ga+h0LmPNObHBuFVDGFqRXKv5LWI6KZ+7KNNSo4p8v7WV2JfYGDRoTtk4sA5GGw8Kyb2DNC+0+YBoZjW78Tu9fM6RanDmfMjFWpe2jQ9q9uBirOWkcVmwpNud/N61Vz3RAhmYuqYUE21R/1mLr+dBYZ54WLsI3za+bBQe3QjpYtJvJnEJIBDzXHia8Alo9KhNOGxMeexJhQXx0KM6XH2DVUf6KMrr5cH7bIdwbSCAQ==",
         "scheme": "FAIRPLAY",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/fps/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODMiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NyIsImZpbGVzIjoiIiwidXNlcl90b2tlbiI6ImRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0iLCJ1ZGlkIjoiIiwiYWRkaXRpb25hbF9jYXNfc3lzdGVtIjoxOTh9&signature=lighwi6L3K093M%2fBKJeKX%2fpwaQA%3d",
-        "objectType": "KalturaFairPlayPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/fps/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODMiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NyIsImZpbGVzIjoiIiwidXNlcl90b2tlbiI6ImRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0iLCJ1ZGlkIjoiIiwiYWRkaXRpb25hbF9jYXNfc3lzdGVtIjoxOTh9&signature=lighwi6L3K093M%2fBKJeKX%2fpwaQA%3d",
+        "objectType": "VidiunFairPlayPlaybackPluginData"
       }],
       "assetId": 480097,
       "id": 728183,
       "type": "Mobile_Devices_Main_HD_FP",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728183/contextType/PLAYBACK/a.m3u8",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728183/contextType/PLAYBACK/a.m3u8",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "mpegdash",
       "protocols": "https",
       "drm": [{
         "scheme": "PLAYREADY_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODQiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=0k74fJhSENT3e9P%2fBOVVkM8PI6E%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/playready/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODQiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=0k74fJhSENT3e9P%2fBOVVkM8PI6E%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }, {
         "scheme": "WIDEVINE_CENC",
-        "licenseURL": "https://ny-udrm-stg.kaltura.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODQiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=0k74fJhSENT3e9P%2fBOVVkM8PI6E%3d",
-        "objectType": "KalturaDrmPlaybackPluginData"
+        "licenseURL": "https://ny-udrm-stg.vidiun.com/cenc/widevine/license?custom_data=eyJjYV9zeXN0ZW0iOiJodHRwOi8vYXBpLXByZXByb2Qub3R0LmthbHR1cmEuY29tL3Y0XzYvYXBpX3YzL3NlcnZpY2UvYXNzZXRGaWxlL2FjdGlvbi9nZXRDb250ZXh0P2tzPWRqSjhNVGs0ZkhGTmxOVEZQOE5WX1dYb1BuM0NKblFSSUpoQ2U0ekQ5ZzV2b0NIQ2dISlJhbnYydWJFQkxMbDlHYjEzQ3hmQlRHV1pwVFBfcERfZk9pclQzLUw0RjBrRElkSlJya1NoQnhqdVJJMS0wbnoydWJsSkpkNDhRS3pMQXFXNzl5N0x6b2o2bmdmdjF1SEdDN3h4UHRVcWNTdz0mY29udGV4dFR5cGU9bm9uZSZpZD03MjgxODQiLCJhY2NvdW50X2lkIjoyMDkxNjcxLCJjb250ZW50X2lkIjoiMV90bWVxZTJuOV8xX3V3bHphbHN6LDFfdG1lcWUybjlfMV9ob2lqMHo3NywxX3RtZXFlMm45XzFfbTF5Y3oxY3giLCJmaWxlcyI6IiIsInVzZXJfdG9rZW4iOiJkako4TVRrNGZIRk5sTlRGUDhOVl9XWG9QbjNDSm5RUklKaENlNHpEOWc1dm9DSENnSEpSYW52MnViRUJMTGw5R2IxM0N4ZkJUR1dacFRQX3BEX2ZPaXJUMy1MNEYwa0RJZEpScmtTaEJ4anVSSTEtMG56MnVibEpKZDQ4UUt6TEFxVzc5eTdMem9qNm5nZnYxdUhHQzd4eFB0VXFjU3c9IiwidWRpZCI6IiIsImFkZGl0aW9uYWxfY2FzX3N5c3RlbSI6MTk4fQ%3d%3d&signature=0k74fJhSENT3e9P%2fBOVVkM8PI6E%3d",
+        "objectType": "VidiunDrmPlaybackPluginData"
       }],
       "assetId": 480097,
       "id": 728184,
       "type": "Web_HD_Dash",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728184/contextType/PLAYBACK/a.mpd",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728184/contextType/PLAYBACK/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "applehttp",
       "protocols": "https",
       "assetId": 480097,
       "id": 728187,
       "type": "Mobile_Devices_Main_Download",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728187/contextType/PLAYBACK/a.mpd",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728187/contextType/PLAYBACK/a.mpd",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_uwlzalsz,1_tmeqe2n9_1_hoij0z77,1_tmeqe2n9_1_m1ycz1cx",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }, {
       "format": "applehttp",
       "protocols": "https",
       "assetId": 480097,
       "id": 728188,
       "type": "Mobile_Devices_Main_SD",
-      "url": "http://api-preprod.ott.kaltura.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728188/contextType/PLAYBACK/a.wvm",
+      "url": "http://api-preprod.ott.vidiun.com/v4_6/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/480097/assetType/media/assetFileId/728188/contextType/PLAYBACK/a.wvm",
       "duration": 123000,
       "externalId": "1_tmeqe2n9_1_9crpi8m5,1_tmeqe2n9_1_r64bcvp1",
-      "objectType": "KalturaPlaybackSource"
+      "objectType": "VidiunPlaybackSource"
     }],
-    "messages": [{"message": "OK", "code": "OK", "objectType": "KalturaAccessControlMessage"}],
-    "objectType": "KalturaPlaybackContext"
+    "messages": [{"message": "OK", "code": "OK", "objectType": "VidiunAccessControlMessage"}],
+    "objectType": "VidiunPlaybackContext"
   }], "executionTime": 0.7283435
 };
 
 const LiveEntryNoDrmData = {
   "result": [
     {
-      "ks": "djJ8MTk4fEiDJqfTA_nqary8_jB-U-W0ne3JNVaZW5JmZDufdRcmcTGy3pAquXoMvFbANe6h63lEhxCo7mMZTsMTP5k4QDmOq99dRsPEsHUwOknv_9wvR_J2pbNzdXmlZ4JlYgO0ZcUr9_7tsZhqrHRfIcgrSj4=",
+      "vs": "djJ8MTk4fEiDJqfTA_nqary8_jB-U-W0ne3JNVaZW5JmZDufdRcmcTGy3pAquXoMvFbANe6h63lEhxCo7mMZTsMTP5k4QDmOq99dRsPEsHUwOknv_9wvR_J2pbNzdXmlZ4JlYgO0ZcUr9_7tsZhqrHRfIcgrSj4=",
       "refreshToken": "b07f74dfe6584790b272eb742577369b",
-      "objectType": "KalturaLoginSession"
+      "objectType": "VidiunLoginSession"
     },
     {
       "externalIds": "1073",
@@ -544,7 +544,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -554,7 +554,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -564,7 +564,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -574,7 +574,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -584,7 +584,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -594,7 +594,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "1:1",
@@ -604,7 +604,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_12",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "1:1",
@@ -614,7 +614,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_12",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -624,7 +624,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -634,7 +634,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -644,7 +644,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -654,7 +654,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -664,7 +664,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -674,7 +674,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -684,7 +684,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:3",
@@ -694,7 +694,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_2",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -704,7 +704,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -714,7 +714,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -724,7 +724,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -734,7 +734,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -744,7 +744,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -754,7 +754,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "1:1",
@@ -764,7 +764,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_12",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "2:1",
@@ -774,7 +774,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_17",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "4:3",
@@ -784,7 +784,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_3",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "16:9",
@@ -794,7 +794,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_1",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         },
         {
           "ratio": "1:1",
@@ -804,7 +804,7 @@ const LiveEntryNoDrmData = {
           "version": 0,
           "id": "6c5a2e51f3354e75b2e4fe8a5f8dab33_12",
           "isDefault": false,
-          "objectType": "KalturaMediaImage"
+          "objectType": "VidiunMediaImage"
         }
       ],
       "mediaFiles": [
@@ -812,67 +812,67 @@ const LiveEntryNoDrmData = {
           "assetId": 276507,
           "id": 552351,
           "type": "Mobile_Devices_Main_SD",
-          "url": "http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8",
+          "url": "http://cdnapi.vidiun.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8",
           "duration": 0,
           "externalId": "",
           "fileSize": 0,
-          "objectType": "KalturaMediaFile"
+          "objectType": "VidiunMediaFile"
         },
         {
           "assetId": 276507,
           "id": 552352,
           "type": "Mobile_Devices_Main_HD",
-          "url": "http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8",
+          "url": "http://cdnapi.vidiun.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8",
           "duration": 0,
           "externalId": "",
           "fileSize": 0,
-          "objectType": "KalturaMediaFile"
+          "objectType": "VidiunMediaFile"
         }
       ],
       "metas": {
         "synopsis": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Short title": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Runtime": {
           "value": "220",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Catchup logo URL": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "App Link": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Country": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "QUALITY": {
           "value": "",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Epg ID": {
           "value": "1073",
-          "objectType": "KalturaMultilingualStringValue"
+          "objectType": "VidiunMultilingualStringValue"
         },
         "Channel number": {
           "value": 19,
-          "objectType": "KalturaDoubleValue"
+          "objectType": "VidiunDoubleValue"
         },
         "Epg guid ID": {
           "value": 1073,
-          "objectType": "KalturaDoubleValue"
+          "objectType": "VidiunDoubleValue"
         },
         "Catchup allowed": {
           "value": false,
-          "objectType": "KalturaBooleanValue"
+          "objectType": "VidiunBooleanValue"
         }
       },
       "tags": {
@@ -880,50 +880,50 @@ const LiveEntryNoDrmData = {
           "objects": [
             {
               "value": "yes",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             },
             {
               "value": "no",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             }
           ],
-          "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValueArray"
         },
         "Genre": {
           "objects": [
             {
               "value": "History",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             }
           ],
-          "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValueArray"
         },
         "Parental Rating": {
           "objects": [
             {
               "value": "PG",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             }
           ],
-          "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValueArray"
         },
         "QUALITY": {
           "objects": [
             {
               "value": "hd",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             }
           ],
-          "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValueArray"
         },
         "Source": {
           "objects": [
             {
               "value": "Web3",
-              "objectType": "KalturaMultilingualStringValue"
+              "objectType": "VidiunMultilingualStringValue"
             }
           ],
-          "objectType": "KalturaMultilingualStringValueArray"
+          "objectType": "VidiunMultilingualStringValueArray"
         }
       },
       "startDate": 946684800,
@@ -932,7 +932,7 @@ const LiveEntryNoDrmData = {
       "enableCatchUp": true,
       "enableStartOver": true,
       "enableTrickPlay": true,
-      "objectType": "KalturaMediaAsset"
+      "objectType": "VidiunMediaAsset"
     },
     {
       "sources": [
@@ -943,11 +943,11 @@ const LiveEntryNoDrmData = {
           "assetId": 276507,
           "id": 552351,
           "type": "Mobile_Devices_Main_SD",
-          "url": "http://api-preprod.ott.kaltura.com/v4_7/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/276507/assetType/media/assetFileId/552351/contextType/PLAYBACK/a.m3u8",
+          "url": "http://api-preprod.ott.vidiun.com/v4_7/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/276507/assetType/media/assetFileId/552351/contextType/PLAYBACK/a.m3u8",
           "duration": 0,
           "externalId": "",
           "fileSize": 0,
-          "objectType": "KalturaPlaybackSource"
+          "objectType": "VidiunPlaybackSource"
         },
         {
           "format": "applehttp",
@@ -956,21 +956,21 @@ const LiveEntryNoDrmData = {
           "assetId": 276507,
           "id": 552352,
           "type": "Mobile_Devices_Main_HD",
-          "url": "http://api-preprod.ott.kaltura.com/v4_7/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/276507/assetType/media/assetFileId/552352/contextType/PLAYBACK/a.m3u8",
+          "url": "http://api-preprod.ott.vidiun.com/v4_7/api_v3/service/assetFile/action/playManifest/partnerId/198/assetId/276507/assetType/media/assetFileId/552352/contextType/PLAYBACK/a.m3u8",
           "duration": 0,
           "externalId": "",
           "fileSize": 0,
-          "objectType": "KalturaPlaybackSource"
+          "objectType": "VidiunPlaybackSource"
         }
       ],
       "messages": [
         {
           "message": "OK",
           "code": "OK",
-          "objectType": "KalturaAccessControlMessage"
+          "objectType": "VidiunAccessControlMessage"
         }
       ],
-      "objectType": "KalturaPlaybackContext"
+      "objectType": "VidiunPlaybackContext"
     }
   ],
   "executionTime": 0.3984844

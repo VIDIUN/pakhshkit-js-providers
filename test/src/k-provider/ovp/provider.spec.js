@@ -1,8 +1,8 @@
-import OVPProvider from '../../../../src/k-provider/ovp/provider'
+import OVPProvider from '../../../../src/v-provider/ovp/provider'
 import * as BE_DATA from './be-data'
 import * as MEDIA_CONFIG_DATA from './media-config-data'
-import {MultiRequestResult} from '../../../../src/k-provider/common/multi-request-builder'
-import MultiRequestBuilder from '../../../../src/k-provider/common/multi-request-builder'
+import {MultiRequestResult} from '../../../../src/v-provider/common/multi-request-builder'
+import MultiRequestBuilder from '../../../../src/v-provider/common/multi-request-builder'
 
 describe('OVPProvider.partnerId:1082342', function () {
   let provider, sandbox;
@@ -116,12 +116,12 @@ describe('OVPProvider.partnerId:1082342', function () {
 describe('OVPProvider.partnerId:1068292', function () {
   let provider, sandbox;
   const partnerId = 1068292;
-  const ks = 'NTAwZjViZWZjY2NjNTRkNGEyMjU1MTg4OGE1NmUwNDljZWJkMzk1MXwxMDY4MjkyOzEwNjgyOTI7MTQ5MDE3NjE0NjswOzE0OTAwODk3NDYuMDIyNjswO3ZpZXc6Kix3aWRnZXQ6MTs7';
+  const vs = 'NTAwZjViZWZjY2NjNTRkNGEyMjU1MTg4OGE1NmUwNDljZWJkMzk1MXwxMDY4MjkyOzEwNjgyOTI7MTQ5MDE3NjE0NjswOzE0OTAwODk3NDYuMDIyNjswO3ZpZXc6Kix3aWRnZXQ6MTs7';
   const playerVersion = '1.2.3';
 
   beforeEach(() => {
     sandbox = sinon.sandbox.create();
-    provider = new OVPProvider({partnerId: partnerId, ks: ks}, playerVersion);
+    provider = new OVPProvider({partnerId: partnerId, vs: vs}, playerVersion);
   });
 
   afterEach(() => {
@@ -177,7 +177,7 @@ describe('OVPProvider.partnerId:1068292', function () {
   });
 
   it('should return config with plugins and with drm data', (done) => {
-    provider = new OVPProvider({partnerId: partnerId, ks: ks, uiConfId: 38601981}, playerVersion);
+    provider = new OVPProvider({partnerId: partnerId, vs: vs, uiConfId: 38601981}, playerVersion);
     sinon.stub(MultiRequestBuilder.prototype, "execute").callsFake(
       function () {
         return new Promise((resolve) => {
@@ -201,7 +201,7 @@ describe('OVPProvider.partnerId:1068292', function () {
   });
 
   it('should return reject when try to get config with wrong uiConf ID', (done) => {
-    provider = new OVPProvider({partnerId: partnerId, ks: ks, uiConfId: 38601981}, playerVersion);
+    provider = new OVPProvider({partnerId: partnerId, vs: vs, uiConfId: 38601981}, playerVersion);
     sinon.stub(MultiRequestBuilder.prototype, "execute").callsFake(
       function () {
         return new Promise((resolve) => {

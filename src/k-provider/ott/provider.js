@@ -6,8 +6,8 @@ import OTTDataLoaderManager from './loaders/data-loader-manager'
 import OTTSessionLoader from './loaders/session-loader'
 import OTTAssetLoader from './loaders/asset-loader'
 import OTTProviderParser from './provider-parser'
-import KalturaAsset from './response-types/kaltura-asset'
-import KalturaPlaybackContext from './response-types/kaltura-playback-context'
+import VidiunAsset from './response-types/vidiun-asset'
+import VidiunPlaybackContext from './response-types/vidiun-playback-context'
 import MediaEntry from '../../entities/media-entry'
 
 export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject> {
@@ -28,21 +28,21 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
    * @returns {Promise<ProviderMediaConfigObject>} - The provider media config
    */
   getMediaConfig(mediaInfo: OTTProviderMediaInfoObject): Promise<ProviderMediaConfigObject> {
-    if (mediaInfo.ks) {
-      this.ks = mediaInfo.ks;
+    if (mediaInfo.vs) {
+      this.vs = mediaInfo.vs;
     }
-    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.ks);
+    this._dataLoader = new OTTDataLoaderManager(this.partnerId, this.vs);
     return new Promise((resolve, reject) => {
       const entryId = mediaInfo.entryId;
       if (entryId) {
-        let ks: string = this.ks;
-        if (!ks) {
-          ks = "{1:result:ks}";
+        let vs: string = this.vs;
+        if (!vs) {
+          vs = "{1:result:vs}";
           this._dataLoader.add(OTTSessionLoader, {partnerId: this.partnerId});
         }
-        const contextType = mediaInfo.contextType || KalturaPlaybackContext.Type.PLAYBACK;
-        const mediaType = mediaInfo.mediaType || KalturaAsset.Type.MEDIA;
-        const assetReferenceType = mediaInfo.assetReferenceType || KalturaAsset.AssetReferenceType.MEDIA;
+        const contextType = mediaInfo.contextType || VidiunPlaybackContext.Type.PLAYBACK;
+        const mediaType = mediaInfo.mediaType || VidiunAsset.Type.MEDIA;
+        const assetReferenceType = mediaInfo.assetReferenceType || VidiunAsset.AssetReferenceType.MEDIA;
         const playbackContext = {
           mediaProtocol: mediaInfo.protocol,
           assetFileIds: mediaInfo.fileIds,
@@ -50,7 +50,7 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
         };
         this._dataLoader.add(OTTAssetLoader, {
           entryId: entryId,
-          ks: ks,
+          vs: vs,
           type: mediaType,
           playbackContext: playbackContext,
           assetReferenceType: assetReferenceType
@@ -105,11 +105,11 @@ export default class OTTProvider extends BaseProvider<OTTProviderMediaInfoObject
       if (data.has(OTTSessionLoader.id)) {
         const sessionLoader = data.get(OTTSessionLoader.id);
         if (sessionLoader && sessionLoader.response) {
-          this.ks = sessionLoader.response;
-          mediaConfig.session.ks = this.ks;
+          this.vs = sessionLoader.response;
+          mediaConfig.session.vs = this.vs;
         }
       } else {
-        mediaConfig.session.ks = this.ks;
+        mediaConfig.session.vs = this.vs;
       }
       if (data.has(OTTAssetLoader.id)) {
         const assetLoader = data.get(OTTAssetLoader.id);
