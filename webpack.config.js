@@ -67,24 +67,24 @@ const providersConfig = clone(baseConfig);
 const servicesConfig = clone(baseConfig);
 
 Object.assign(providersConfig.entry, {
-  "ott": "k-provider/ott/index.js",
-  "ovp": "k-provider/ovp/index.js"
+  "ott": "v-provider/ott/index.js",
+  "ovp": "v-provider/ovp/index.js"
 });
 
 Object.assign(providersConfig.output, {
-  filename: "playkit-[name]-provider.js",
-  library: ["playkit", "providers", "[name]"]
+  filename: "pakhshkit-[name]-provider.js",
+  library: ["pakhshkit", "providers", "[name]"]
 });
 
 Object.assign(servicesConfig.entry, {
-  "analytics": "k-provider/ovp/services/analytics/index.js",
-  "stats": "k-provider/ovp/services/stats/index.js",
-  "bookmark": "k-provider/ott/services/bookmark/index.js"
+  "analytics": "v-provider/ovp/services/analytics/index.js",
+  "stats": "v-provider/ovp/services/stats/index.js",
+  "bookmark": "v-provider/ott/services/bookmark/index.js"
 });
 
 Object.assign(servicesConfig.output, {
-  filename: "playkit-[name]-service.js",
-  library: ["playkit", "services", "[name]"]
+  filename: "pakhshkit-[name]-service.js",
+  library: ["pakhshkit", "services", "[name]"]
 });
 
 module.exports = [providersConfig, servicesConfig];

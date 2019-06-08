@@ -1,5 +1,5 @@
 //@flow
-export default class KalturaFlavorAsset {
+export default class VidiunFlavorAsset {
   static Status: { [status: string]: number } = {
     ERROR: -1,
     QUEUED: 0,
@@ -55,7 +55,7 @@ export default class KalturaFlavorAsset {
    */
   isOriginal: boolean;
   /**
-   * @member - True if this Flavor Asset is playable in KDP
+   * @member - True if this Flavor Asset is playable in VDP
    * @type {boolean}
    */
   isWeb: boolean;

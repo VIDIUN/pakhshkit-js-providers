@@ -6,14 +6,14 @@ Configuration parameters are provided upon instantiation of the provider instanc
 var config = {
   // Configuration here
 };
-var provider = new playkit.providers.ovp.Provider(config);
+var provider = new pakhshkit.providers.ovp.Provider(config);
 ```
 #### Cloud TV
 ```js
 var config = {
   // Configuration here
 };
-var provider = new playkit.providers.ott.Provider(config);
+var provider = new pakhshkit.providers.ott.Provider(config);
 ```
 
 ### Configuration Structure
@@ -21,7 +21,7 @@ var provider = new playkit.providers.ott.Provider(config);
 {
   partnerId: number,
   logLevel: string, // optional
-  ks: string, // optional
+  vs: string, // optional
   uiConfId: number, // optional
   env: ProviderEnvConfigObject // optional
 }
@@ -38,10 +38,10 @@ var provider = new playkit.providers.ott.Provider(config);
 >##### Default: `-`
 >##### Description: Defines the customer's partner ID.
 ## 
->### config.ks
+>### config.vs
 >##### Type: `string`
 >##### Default: `''`
->##### Description: Defines the customer's unique KS.
+>##### Description: Defines the customer's unique VS.
 ## 
 >### config.uiConfId
 >##### Type: `number`
@@ -60,15 +60,15 @@ var provider = new playkit.providers.ott.Provider(config);
 > **OVP**
 >```js
 >{
->  serviceUrl: "//www.kaltura.com/api_v3",
->  cdnUrl: "//cdnapisec.kaltura.com"
+>  serviceUrl: "//www.vidiun.com/api_v3",
+>  cdnUrl: "//cdnapisec.vidiun.com"
 >}
 >```
 > **Cloud TV**
 >```js
 >{
->  serviceUrl: "//api-preprod.ott.kaltura.com/v4_6/api_v3",
->  cdnUrl: "//api-preprod.ott.kaltura.com/v4_7"
+>  serviceUrl: "//api-preprod.ott.vidiun.com/v4_6/api_v3",
+>  cdnUrl: "//api-preprod.ott.vidiun.com/v4_7"
 >}
 >```
 >##### Description: Defines the server environment to run against.

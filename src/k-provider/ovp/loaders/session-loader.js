@@ -21,11 +21,11 @@ export default class OVPSessionLoader implements ILoader {
   }
 
   set response(response: any) {
-    this._response.ks = response[0].data.ks;
+    this._response.vs = response[0].data.vs;
   }
 
   get response(): any {
-    return this._response.ks;
+    return this._response.vs;
   }
 
   /**

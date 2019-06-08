@@ -1,10 +1,10 @@
-import OTTBookmarkService from '../../../../../src/k-provider/ott/services/bookmark/bookmark-service'
+import OTTBookmarkService from '../../../../../src/v-provider/ott/services/bookmark/bookmark-service'
 import RequestBuilder from '../../../../../src/util/request-builder'
-import OTTConfiguration from '../../../../../src/k-provider/ott/config'
+import OTTConfiguration from '../../../../../src/v-provider/ott/config'
 
 describe('bookmark service - add', function () {
   const ottParams = OTTConfiguration.get();
-  const ks = '1234';
+  const vs = '1234';
   const serviceUrl = 'http://my/url';
   let bookMark, playerData;
 
@@ -21,17 +21,17 @@ describe('bookmark service - add', function () {
   });
 
   it('should be proper values', function () {
-    const request = OTTBookmarkService.add(serviceUrl, ks, bookMark);
+    const request = OTTBookmarkService.add(serviceUrl, vs, bookMark);
     (request instanceof RequestBuilder).should.be.true;
     request.service.should.be.equal('bookmark');
     request.action.should.be.equal('add');
     request.method.should.be.equal('POST');
     request.url.should.be.equal(`${serviceUrl}/service/bookmark/action/add`);
-    Object.assign(playerData, {objectType: "KalturaBookmarkPlayerData"});
-    Object.assign(bookMark, {objectType: "KalturaBookmark"});
+    Object.assign(playerData, {objectType: "VidiunBookmarkPlayerData"});
+    Object.assign(bookMark, {objectType: "VidiunBookmark"});
     JSON.parse(request.params).should.deep.equal({
       bookmark: bookMark,
-      ks: ks,
+      vs: vs,
       apiVersion: ottParams.serviceParams.apiVersion
     });
   });

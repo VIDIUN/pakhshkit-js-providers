@@ -1,10 +1,10 @@
 //@flow
 import ServiceResult from '../../common/base-service-result'
-import KalturaAccessControlMessage from '../../common/response-types/kaltura-access-control-message'
-import KalturaRuleAction from '../../common/response-types/kaltura-rule-action'
-import KalturaPlaybackSource from './kaltura-playback-source'
+import VidiunAccessControlMessage from '../../common/response-types/vidiun-access-control-message'
+import VidiunRuleAction from '../../common/response-types/vidiun-rule-action'
+import VidiunPlaybackSource from './vidiun-playback-source'
 
-export default class KalturaPlaybackContext extends ServiceResult {
+export default class VidiunPlaybackContext extends ServiceResult {
   static Type: { [type: string]: string } = {
     TRAILER: "TRAILER",
     CATCHUP: "CATCHUP",
@@ -13,19 +13,19 @@ export default class KalturaPlaybackContext extends ServiceResult {
   };
   /**
    * @member - The playback sources
-   * @type {Array<KalturaPlaybackSource>}
+   * @type {Array<VidiunPlaybackSource>}
    */
-  sources: Array<KalturaPlaybackSource> = [];
+  sources: Array<VidiunPlaybackSource> = [];
   /**
    * @member - Array of actions as received from the rules that invalidated
-   * @type {Array<KalturaRuleAction>}
+   * @type {Array<VidiunRuleAction>}
    */
-  actions: Array<KalturaRuleAction> = [];
+  actions: Array<VidiunRuleAction> = [];
   /**
    * @member - Array of actions as received from the rules that invalidated
-   * @type {Array<KalturaAccessControlMessage>}
+   * @type {Array<VidiunAccessControlMessage>}
    */
-  messages: Array<KalturaAccessControlMessage> = [];
+  messages: Array<VidiunAccessControlMessage> = [];
 
   /**
    * @constructor
@@ -36,15 +36,15 @@ export default class KalturaPlaybackContext extends ServiceResult {
     if (!this.hasError) {
       const messages = response.messages;
       if (messages) {
-        messages.map(message => this.messages.push(new KalturaAccessControlMessage(message)));
+        messages.map(message => this.messages.push(new VidiunAccessControlMessage(message)));
       }
       const actions = response.actions;
       if (actions) {
-        actions.map(action => this.actions.push(new KalturaRuleAction(action)));
+        actions.map(action => this.actions.push(new VidiunRuleAction(action)));
       }
       const sources = response.sources;
       if (sources) {
-        sources.map(source => this.sources.push(new KalturaPlaybackSource(source)));
+        sources.map(source => this.sources.push(new VidiunPlaybackSource(source)));
       }
     }
   }

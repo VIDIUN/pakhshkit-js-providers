@@ -26,19 +26,19 @@ export default class OVPProvider extends BaseProvider<ProviderMediaInfoObject> {
    * @returns {Promise<ProviderMediaConfigObject>} - The provider media config
    */
   getMediaConfig(mediaInfo: ProviderMediaInfoObject): Promise<ProviderMediaConfigObject> {
-    if (mediaInfo.ks) {
-      this.ks = mediaInfo.ks;
+    if (mediaInfo.vs) {
+      this.vs = mediaInfo.vs;
     }
-    this._dataLoader = new OVPDataLoaderManager(this.playerVersion, this.partnerId, this.ks);
+    this._dataLoader = new OVPDataLoaderManager(this.playerVersion, this.partnerId, this.vs);
     return new Promise((resolve, reject) => {
       const entryId = mediaInfo.entryId;
       if (entryId) {
-        let ks: string = this.ks;
-        if (!ks) {
-          ks = "{1:result:ks}";
+        let vs: string = this.vs;
+        if (!vs) {
+          vs = "{1:result:vs}";
           this._dataLoader.add(OVPSessionLoader, {partnerId: this.partnerId});
         }
-        this._dataLoader.add(OVPMediaEntryLoader, {entryId: entryId, ks: ks});
+        this._dataLoader.add(OVPMediaEntryLoader, {entryId: entryId, vs: vs});
         this._dataLoader.fetchData()
           .then(response => {
             resolve(this._parseDataFromResponse(response));
@@ -84,11 +84,11 @@ export default class OVPProvider extends BaseProvider<ProviderMediaInfoObject> {
       if (data.has(OVPSessionLoader.id)) {
         const sessionLoader = data.get(OVPSessionLoader.id);
         if (sessionLoader && sessionLoader.response) {
-          this.ks = sessionLoader.response;
-          mediaConfig.session.ks = this.ks;
+          this.vs = sessionLoader.response;
+          mediaConfig.session.vs = this.vs;
         }
       } else {
-        mediaConfig.session.ks = this.ks;
+        mediaConfig.session.vs = this.vs;
       }
       if (data.has(OVPMediaEntryLoader.id)) {
         const mediaLoader = data.get(OVPMediaEntryLoader.id);
@@ -105,7 +105,7 @@ export default class OVPProvider extends BaseProvider<ProviderMediaInfoObject> {
             }
           }
           const mediaEntry = OVPProviderParser.getMediaEntry(
-            this.isAnonymous ? '' : this.ks,
+            this.isAnonymous ? '' : this.vs,
             this.partnerId,
             this.uiConfId,
             mediaLoader.response
